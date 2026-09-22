@@ -1,0 +1,23 @@
+(function(){
+  const stages=[
+    {icon:'map-pinned',kicker:'Stage 01 · Starting point',title:'Discover your trial.',body:'Find an official SAATAACK 50 trial in your preferred city. Review the date, venue, eligibility, registration status and player categories before applying.',action:'Choose an official trial',status:'Trial discovered',gate:'Submit a complete application',link:'trials.html',cta:'Find your trial'},
+    {icon:'file-pen-line',kicker:'Stage 02 · Player entry',title:'Register.',body:'Complete the official application with accurate personal, cricket and contact information. Select your primary role and submit the required declarations and consent.',action:'Submit your application',status:'Registration submitted',gate:'Application verification',link:'player-registration.html',cta:'Register for trials'},
+    {icon:'scan-search',kicker:'Stage 03 · Verification',title:'Get verified.',body:'Your identity, eligibility, playing role and submitted details are checked. Respond promptly if the verification team requests additional information.',action:'Complete verification',status:'Under verification',gate:'Official confirmation',link:'trial-updates.html',cta:'Follow updates'},
+    {icon:'badge-check',kicker:'Stage 04 · Confirmation',title:'Receive confirmation.',body:'Verified players receive their official trial session, venue, reporting time, participant ID, equipment instructions and trial-day rules.',action:'Confirm and prepare',status:'Trial place confirmed',gate:'Report and check in',link:'trials.html',cta:'View trial information'},
+    {icon:'swords',kicker:'Stage 05 · Trial day',title:'Show what your role can change.',body:'Complete baseline, role-specific, fielding, athletic and competitive assessments. Performance evidence begins here.',action:'Perform, adapt and compete',status:'Trial attended',gate:'Evaluator review',link:'selection-process.html',cta:'Understand selection'},
+    {icon:'clipboard-check',kicker:'Stage 06 · Evaluation',title:'Enter official review.',body:'Recorded scores and evaluator observations are reviewed across the complete assessment. One moment alone does not determine progression.',action:'Follow official communication',status:'Evaluation in progress',gate:'Progression decision',link:'trial-updates.html',cta:'View trial updates'},
+    {icon:'list-checks',kicker:'Stage 07 · Progression',title:'Earn the shortlist.',body:'Players meeting the required standard may progress to advanced role assessment, competitive matches, camps or additional readiness checks.',action:'Complete the next stage',status:'Shortlisted',gate:'Advanced assessment',link:'selection-process.html',cta:'See selection process'},
+    {icon:'circle-dot-dashed',kicker:'Stage 08 · Qualification',title:'Enter the qualified player pool.',body:'Players who complete all required stages become eligible for team consideration. Qualification is not a guaranteed squad place.',action:'Keep details current',status:'Qualified player pool',gate:'Team consideration',link:'trial-participants.html',cta:'Explore participants'},
+    {icon:'badge-check',kicker:'Stage 09 · Team decision',title:'Get selected.',body:'Teams review eligible players according to squad balance, role needs, tactical fit, availability, evidence and competition rules.',action:'Complete team formalities',status:'Selected',gate:'Team onboarding',link:'teams.html',cta:'Explore teams'},
+    {icon:'trophy',kicker:'Stage 10 · The league',title:'Play SAATAACK 50.',body:'Prepare with your squad and step onto the Season 1 stage. This is where your road becomes an official league record.',action:'Prepare and perform',status:'SAATAACK 50 player',gate:'Make every ball count',link:'format.html',cta:'Explore the format'}
+  ];
+  const buttons=[...document.querySelectorAll('.journey-step')];
+  const detail=document.getElementById('journeyDetail');
+  function render(index){
+    const stage=stages[index];
+    buttons.forEach((button,i)=>{button.classList.toggle('active',i===index);button.setAttribute('aria-current',i===index?'step':'false')});
+    detail.innerHTML=`<div class="journey-icon"><i data-lucide="${stage.icon}" class="icon" aria-hidden="true"></i></div><div><p class="journey-kicker">${stage.kicker}</p><h3>${stage.title}</h3><p>${stage.body}</p><dl><div><dt>Your action</dt><dd>${stage.action}</dd></div><div><dt>Your status</dt><dd>${stage.status}</dd></div><div><dt>Next gate</dt><dd>${stage.gate}</dd></div></dl><a href="${stage.link}" class="btn">${stage.cta} <i data-lucide="arrow-up-right" class="icon" aria-hidden="true"></i></a></div>`;
+    if(window.lucide) window.lucide.createIcons();
+  }
+  buttons.forEach((button,index)=>button.addEventListener('click',()=>render(index)));
+})();

@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description"
+    content="Find an official SATAACK 50 player trial near you. View trial cities, availability, eligibility and the Season 1 selection pathway.">
+  <title>Find a Trial - SATAACK 50</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="stylesheet" href="assets/styles/trials.css">
+</head>
+
+<body class="trials-page">
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="SATAACK 50 home"><img class="logo"
+          src="assets/images/saataack50-logo.png" alt="SAATAACK 50"></a>
+      <nav class="navlinks" aria-label="Main navigation">
+        <div class="nav-item active"><a href="trials.html" aria-current="page">Trials &amp; Participants <i
+              data-lucide="chevron-down" class="icon" aria-hidden="true"></i></a>
+          <div class="submenu"><a href="trials.html" aria-current="page">Find a Trial</a><a
+              href="trial-participants.html">Trial Participants</a><a href="trial-updates.html">Trial Updates</a><a
+              href="selection-process.html">Selection Process</a><a href="road-to-saataack50.html">Road to SATAACK
+              50</a></div>
+        </div>
+        <div class="nav-item"><a href="teams.html">Teams</a></div>
+        <div class="nav-item"><a href="reels-highlights.html">Watch <i data-lucide="chevron-down" class="icon"
+              aria-hidden="true"></i></a>
+          <div class="submenu"><a href="reels-highlights.html">Explainer Videos</a><a href="shows.html">Shows</a><a
+              href="interviews.html">Interviews</a></div>
+        </div>
+        <div class="nav-item"><a href="news.html">Stories <i data-lucide="chevron-down" class="icon"
+              aria-hidden="true"></i></a>
+          <div class="submenu"><a href="news.html">News</a><a href="stories.html">Blog &amp; Stories</a></div>
+        </div>
+        <div class="nav-item"><a href="about.html">The League <i data-lucide="chevron-down" class="icon"
+              aria-hidden="true"></i></a>
+          <div class="submenu"><a href="about.html">About SATAACK 50</a><a href="format.html">50-Ball Format</a><a
+              href="rules.html">Rules &amp; Regulations</a></div>
+        </div>
+               <div class="nav-item"><a href="partners.html">Partners <i data-lucide="chevron-down" class="icon"
+              aria-hidden="true"></i></a>
+              <div class="submenu"><a href="franchises.html" style="pointer-events: none;">Franchises</a></div>
+        </div>
+        <a class="btn" href="player-registration.html">Register for trials <i data-lucide="arrow-up-right" class="icon"
+            aria-hidden="true"></i></a>
+      </nav>
+      <button class="menu" aria-label="Open menu" aria-controls="mobileDrawer" aria-expanded="false"><i
+          data-lucide="menu" class="icon" aria-hidden="true"></i></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="trials-hero">
+      <div class="trials-hero-media"><img src="assets/images/saataack-trials-women.webp"
+          alt="Adult women taking part in a SATAACK 50 tennis-ball cricket trial"></div>
+      <div class="wrap trials-hero-grid">
+        <div class="trials-hero-copy">
+          <p class="eyebrow">Official Season 1 player trials</p>
+          <h1 class="display display-xl">Find your<br><span>trial.</span></h1>
+          <p class="lead">Choose a city. Register your playing role. Step onto the field and show what you can do. Your
+            road to SATAACK 50 starts here.</p>
+          <div class="hero-actions"><a class="btn" href="#trial-finder">Find an open trial <i data-lucide="map-pin"
+                class="icon" aria-hidden="true"></i></a><a class="btn btn-ghost" href="selection-process.html">See how
+              selection works <i data-lucide="arrow-right" class="icon" aria-hidden="true"></i></a></div>
+        </div>
+        <div class="hero-facts" aria-label="Trial overview">
+          <div><span>01</span><strong>Inaugural season</strong></div>
+          <div><span>50</span><strong>Balls. Maximum impact.</strong></div>
+          <div><span>NOW</span><strong>Player pathway open</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="path-ticker" aria-label="Trial selection pathway">
+      <div class="path-ticker-track"><span>Register</span><i data-lucide="arrow-right" class="icon"
+          aria-hidden="true"></i><span>Trial</span><i data-lucide="arrow-right" class="icon"
+          aria-hidden="true"></i><span>Evaluation</span><i data-lucide="arrow-right" class="icon"
+          aria-hidden="true"></i><span>Shortlist</span><i data-lucide="arrow-right" class="icon"
+          aria-hidden="true"></i><span>Player Pool</span><i data-lucide="arrow-right" class="icon"
+          aria-hidden="true"></i><span>Selection</span><i data-lucide="arrow-right" class="icon"
+          aria-hidden="true"></i><span>SATAACK 50</span></div>
+    </div>
+
+    <section class="section trial-finder-section" id="trial-finder">
+      <div class="wrap">
+        <div class="trial-finder-head">
+          <div>
+            <p class="eyebrow">Trials near you</p>
+            <h2 class="display display-lg">Find your trial.</h2>
+            <p class="lead">Search official trial locations and compare registration status, dates and playing
+              categories.</p>
+          </div>
+          <div class="finder-count"><strong id="resultCount">6</strong><span>Locations shown</span></div>
+        </div>
+        <form class="finder-controls" id="trialFilters" role="search">
+          <label class="search-field"><span>Search by city or state</span>
+            <div><i data-lucide="search" class="icon" aria-hidden="true"></i><input id="trialSearch" type="search"
+                placeholder="Try Mumbai" autocomplete="off"></div>
+          </label>
+          <label><span>Registration status</span><select id="statusFilter">
+              <option value="all">All statuses</option>
+              <option value="open">Registration open</option>
+              <option value="early">Early access</option>
+              <option value="soon">Announcing soon</option>
+            </select></label>
+          <label><span>Playing role</span><select id="roleFilter">
+              <option value="all">All roles</option>
+              <option value="batter">Batter</option>
+              <option value="bowler">Bowler</option>
+              <option value="all-rounder">All-rounder</option>
+              <option value="wicketkeeper">Wicketkeeper</option>
+            </select></label>
+          <button class="btn btn-dark locate-btn" type="button" id="locationButton"><i data-lucide="locate-fixed"
+              class="icon" aria-hidden="true"></i> Use my location</button>
+        </form>
+
+        <div class="trial-cards" id="trialCards">
+          <article class="trial-card trial-featured" data-city="mumbai thane maharashtra" data-status="open"
+            data-roles="batter bowler all-rounder wicketkeeper">
+            <div class="trial-card-top"><span class="trial-number">01</span><span class="trial-status open">Registration open</span></div>
+            <div class="trial-card-main"><div><p class="trial-kicker">Featured official trial</p><h3>Mumbai</h3>
+              <div class="trial-details"><span><i data-lucide="calendar-days" class="icon" aria-hidden="true"></i>17 September 2026</span><span><i data-lucide="map-pin" class="icon" aria-hidden="true"></i>Venue announcing soon</span><span><i data-lucide="clock-3" class="icon" aria-hidden="true"></i>Reporting time with confirmation</span></div>
+            </div><img src="assets/icons/tennis-ball.svg" alt="Tennis cricket ball" class="trial-sport-icon"></div>
+            <div class="role-tags"><span>Batter</span><span>Bowler</span><span>All-rounder</span><span>Wicketkeeper</span></div>
+            <p>Register now to enter the Mumbai trial pool. Confirmed participants will receive the final venue, reporting time and trial-day instructions.</p>
+            <div class="trial-card-actions"><a href="player-registration.html" class="btn btn-dark">Register for Mumbai <i data-lucide="arrow-up-right" class="icon" aria-hidden="true"></i></a><a href="#before-register" class="text-link">View trial details <i data-lucide="arrow-right" class="icon" aria-hidden="true"></i></a></div>
+          </article>
+          <article class="trial-card" data-city="jammu kashmir jammu and kashmir" data-status="open" data-roles="batter bowler all-rounder wicketkeeper">
+            <div class="trial-card-top"><span class="trial-number">02</span><span class="trial-status open">Registration open</span></div>
+            <div class="trial-card-main"><div><p class="trial-kicker">Upcoming city</p><h3>Jammu</h3><div class="trial-details"><span><i data-lucide="calendar-days" class="icon" aria-hidden="true"></i>23 September 2026</span><span><i data-lucide="map-pin" class="icon" aria-hidden="true"></i>Venue announcing soon</span></div></div><img src="assets/icons/cricket-bat-ball.svg" alt="Cricket bat and tennis ball" class="trial-sport-icon"></div>
+            <div class="role-tags"><span>Batter</span><span>Bowler</span><span>All-rounder</span><span>Wicketkeeper</span></div><p>Join the Jammu trial list and receive the official registration announcement.</p><button class="btn btn-dark open-register" data-city-choice="Jammu">Join Jammu list <i data-lucide="bell" class="icon" aria-hidden="true"></i></button>
+          </article>
+          <article class="trial-card" data-city="kolkata west bengal" data-status="soon" data-roles="batter bowler all-rounder wicketkeeper">
+            <div class="trial-card-top"><span class="trial-number">03</span><span class="trial-status soon">Coming soon</span></div><div class="trial-card-main"><div><p class="trial-kicker">Upcoming city</p><h3>Kolkata</h3><div class="trial-details"><span><i data-lucide="calendar-days" class="icon" aria-hidden="true"></i>Coming soon</span><span><i data-lucide="map-pin" class="icon" aria-hidden="true"></i>Venue announcing soon</span></div></div><img src="assets/icons/cricket-bat.svg" alt="Cricket bat" class="trial-sport-icon"></div><div class="role-tags"><span>Batter</span><span>Bowler</span><span>All-rounder</span><span>Wicketkeeper</span></div><p>Trial date, venue and registration details will be announced soon.</p><button class="btn btn-dark open-register" data-city-choice="Kolkata">Join Kolkata list <i data-lucide="bell" class="icon" aria-hidden="true"></i></button></article>
+          <article class="trial-card" data-city="ahmedabad gujarat" data-status="soon" data-roles="batter bowler all-rounder wicketkeeper">
+            <div class="trial-card-top"><span class="trial-number">04</span><span class="trial-status soon">Coming soon</span></div><div class="trial-card-main"><div><p class="trial-kicker">Upcoming city</p><h3>Ahmedabad</h3><div class="trial-details"><span><i data-lucide="calendar-days" class="icon" aria-hidden="true"></i>Coming soon</span><span><i data-lucide="map-pin" class="icon" aria-hidden="true"></i>Venue announcing soon</span></div></div><img src="assets/icons/cricket-bat.svg" alt="Cricket bat" class="trial-sport-icon"></div><div class="role-tags"><span>Batter</span><span>Bowler</span><span>All-rounder</span><span>Wicketkeeper</span></div><p>Trial date, venue and registration details will be announced soon.</p><button class="btn btn-dark open-register" data-city-choice="Ahmedabad">Join Ahmedabad list <i data-lucide="bell" class="icon" aria-hidden="true"></i></button></article>
+          <article class="trial-card" data-city="indore madhya pradesh" data-status="soon" data-roles="batter bowler all-rounder wicketkeeper">
+            <div class="trial-card-top"><span class="trial-number">05</span><span class="trial-status soon">Coming soon</span></div><div class="trial-card-main"><div><p class="trial-kicker">Upcoming city</p><h3>Indore</h3><div class="trial-details"><span><i data-lucide="calendar-days" class="icon" aria-hidden="true"></i>Coming soon</span><span><i data-lucide="map-pin" class="icon" aria-hidden="true"></i>Venue announcing soon</span></div></div><img src="assets/icons/cricket-bat.svg" alt="Cricket bat" class="trial-sport-icon"></div><div class="role-tags"><span>Batter</span><span>Bowler</span><span>All-rounder</span><span>Wicketkeeper</span></div><p>Trial date, venue and registration details will be announced soon.</p><button class="btn btn-dark open-register" data-city-choice="Indore">Join Indore list <i data-lucide="bell" class="icon" aria-hidden="true"></i></button></article>
+          <article class="trial-card" data-city="nagpur maharashtra" data-status="soon" data-roles="batter bowler all-rounder wicketkeeper">
+            <div class="trial-card-top"><span class="trial-number">06</span><span class="trial-status soon">Coming soon</span></div><div class="trial-card-main"><div><p class="trial-kicker">Upcoming city</p><h3>Nagpur</h3><div class="trial-details"><span><i data-lucide="calendar-days" class="icon" aria-hidden="true"></i>Coming soon</span><span><i data-lucide="map-pin" class="icon" aria-hidden="true"></i>Venue announcing soon</span></div></div><img src="assets/icons/cricket-bat.svg" alt="Cricket bat" class="trial-sport-icon"></div><div class="role-tags"><span>Batter</span><span>Bowler</span><span>All-rounder</span><span>Wicketkeeper</span></div><p>Trial date, venue and registration details will be announced soon.</p><button class="btn btn-dark open-register" data-city-choice="Nagpur">Join Nagpur list <i data-lucide="bell" class="icon" aria-hidden="true"></i></button></article>
+        </div>
+        <div class="no-results" id="noResults" hidden><img src="assets/icons/tennis-ball.svg" alt="" aria-hidden="true">
+          <h3>No matching trial yet.</h3>
+          <p>Change your filters or request an alert for your city.</p><button
+            class="btn btn-dark open-city-alert">Request my city</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="wrap split trial-explainer">
+        <div>
+          <p class="eyebrow">Official assessment</p>
+          <h2 class="display display-lg">Not just<br>a net session.</h2>
+          <p class="lead">A SATAACK 50 trial is a structured assessment designed to identify players for the Season 1
+            selection pathway.</p>
+          <p class="body-copy">Participants demonstrate role-specific skills through practical exercises, competitive
+            scenarios and match-relevant assessments. The focus is not only raw ability. Selectors also look for
+            decision-making, pressure handling and the potential to influence a 50-ball contest.</p><a class="btn"
+            href="selection-process.html">Explore the selection process <i data-lucide="arrow-right" class="icon"
+              aria-hidden="true"></i></a>
+        </div>
+        <div class="evaluation-stack">
+          <article><img src="assets/icons/cricket-bat.svg" alt="Cricket bat">
+            <div>
+              <h3>Role-specific skill</h3>
+              <p>Batting, bowling, all-round or wicketkeeping ability.</p>
+            </div>
+          </article>
+          <article><img src="assets/icons/fielder-catch.svg" alt="Fielder taking a catch">
+            <div>
+              <h3>Competitive execution</h3>
+              <p>How effectively you perform when time and options are limited.</p>
+            </div>
+          </article>
+          <article><img src="assets/icons/tennis-ball.svg" alt="Tennis cricket ball">
+            <div>
+              <h3>50-ball impact</h3>
+              <p>The instinct and intelligence to change a fast-moving game.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roles-section" id="eligibility">
+      <div class="wrap roles-layout">
+        <figure class="roles-photo"><img src="assets/images/saataack-league-men.webp"
+            alt="Adult male tennis-ball cricket players preparing for competition">
+          <figcaption><strong>Different roles.</strong><span>One chance to make an impact.</span></figcaption>
+        </figure>
+        <div class="roles-content">
+          <p class="eyebrow">Who can register?</p>
+          <h2 class="display display-lg">Bring your<br>best role.</h2>
+          <p class="lead">Your background may be tennis-ball cricket, box cricket, academy, college, corporate or
+            another competitive playing environment.</p>
+          <div class="role-list">
+            <article><span>01</span><img src="assets/icons/cricket-bat.svg" alt="Cricket bat">
+              <div>
+                <h3>Batters</h3>
+                <p>Timing, intent, power, rotation and situational awareness.</p>
+              </div>
+            </article>
+            <article><span>02</span><img src="assets/icons/tennis-ball.svg" alt="Tennis cricket ball">
+              <div>
+                <h3>Bowlers</h3>
+                <p>Accuracy, control, variation and wicket-taking ability.</p>
+              </div>
+            </article>
+            <article><span>03</span><img src="assets/icons/cricket-bat-ball.svg" alt="Cricket bat and tennis ball">
+              <div>
+                <h3>All-rounders</h3>
+                <p>The ability to influence the contest in more than one way.</p>
+              </div>
+            </article>
+            <article><span>04</span><img src="assets/icons/wicketkeeping-glove.svg" alt="Wicketkeeping glove">
+              <div>
+                <h3>Wicketkeepers</h3>
+                <p>Glovework, movement, reactions, awareness and communication.</p>
+              </div>
+            </article>
+          </div>
+          <p class="eligibility-note"><i data-lucide="info" class="icon" aria-hidden="true"></i>Eligibility: boys and girls aged 18 to 30 years as of 1st January 2026. Age proof is required before registration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pink">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">The assessment</p>
+            <h2 class="display display-lg">Every skill has to work<br>under pressure.</h2>
+          </div><a href="selection-process.html" class="btn btn-white">View evaluation criteria <i
+              data-lucide="arrow-right" class="icon" aria-hidden="true"></i></a>
+        </div>
+        <div class="assessment-grid">
+          <article>
+            <div class="assessment-icon"><img src="assets/icons/cricket-bat.svg" alt="Cricket bat"></div>
+            <h3>Batting</h3>
+            <p>Timing · boundary options · strike rotation · shot selection · intent</p>
+          </article>
+          <article>
+            <div class="assessment-icon"><img src="assets/icons/tennis-ball.svg" alt="Tennis cricket ball"></div>
+            <h3>Bowling</h3>
+            <p>Accuracy · control · variation · execution · adaptability</p>
+          </article>
+          <article>
+            <div class="assessment-icon"><img src="assets/icons/fielder-catch.svg" alt="Fielder taking a catch"></div>
+            <h3>Fielding</h3>
+            <p>Catching · movement · throwing · reactions · energy</p>
+          </article>
+          <article>
+            <div class="assessment-icon"><i data-lucide="brain" class="icon" aria-hidden="true"></i></div>
+            <h3>Game intelligence</h3>
+            <p>Decisions · awareness · role clarity · pressure handling</p>
+          </article>
+          <article>
+            <div class="assessment-icon"><i data-lucide="gauge" class="icon" aria-hidden="true"></i></div>
+            <h3>Athletic readiness</h3>
+            <p>Agility · mobility · speed · stamina · repeat effort</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Trial day</p>
+            <h2 class="display display-lg">Arrive ready.</h2>
+          </div>
+          <p class="lead">Your confirmation will carry the exact reporting time and venue instructions. Here is the
+            expected trial-day flow.</p>
+        </div>
+        <div class="day-flow">
+          <article><span>01</span><i data-lucide="badge-check" class="icon" aria-hidden="true"></i>
+            <h3>Check in</h3>
+            <p>Verify your registration, identity and playing role.</p>
+          </article>
+          <article><span>02</span><i data-lucide="activity" class="icon" aria-hidden="true"></i>
+            <h3>Warm up</h3>
+            <p>Attend the official briefing and prepare for assessment.</p>
+          </article>
+          <article><span>03</span><img src="assets/icons/cricket-bat-ball.svg" alt="Cricket bat and tennis ball">
+            <h3>Show your skill</h3>
+            <p>Complete the exercises and scenarios for your role.</p>
+          </article>
+          <article><span>04</span><i data-lucide="clipboard-check" class="icon" aria-hidden="true"></i>
+            <h3>Get assessed</h3>
+            <p>Your performance is recorded by the evaluation team.</p>
+          </article>
+          <article><span>05</span><i data-lucide="message-square-more" class="icon" aria-hidden="true"></i>
+            <h3>Receive status</h3>
+            <p>Next steps are shared through your registered contact details.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="before-register">
+      <div class="wrap prep-grid">
+        <div>
+          <p class="eyebrow">Before you register</p>
+          <h2 class="display display-lg">Know your trial.</h2>
+          <p class="lead">Review the complete listing before submitting your player entry.</p>
+          <div class="check-list"><span><i data-lucide="check" class="icon" aria-hidden="true"></i>Date, venue and
+              directions</span><span><i data-lucide="check" class="icon" aria-hidden="true"></i>Reporting time and
+              deadline</span><span><i data-lucide="check" class="icon" aria-hidden="true"></i>Eligibility and player
+              categories</span><span><i data-lucide="check" class="icon" aria-hidden="true"></i>Capacity and fee, if
+              applicable</span><span><i data-lucide="check" class="icon" aria-hidden="true"></i>Equipment and
+              participation rules</span><span><i data-lucide="check" class="icon" aria-hidden="true"></i>Rescheduling
+              and support information</span></div>
+        </div>
+        <aside class="bring-card">
+          <p class="eyebrow">What to bring</p>
+          <h3>Pack for the opportunity.</h3>
+          <ul>
+            <li>Government-issued identification</li>
+            <li>Registration confirmation</li>
+            <li>Cricket clothing and suitable shoes</li>
+            <li>Personal protective equipment</li>
+            <li>Role-specific cricket gear</li>
+            <li>Water bottle</li>
+          </ul>
+          <p>Your official confirmation will list any additional venue-specific requirements.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section lime">
+      <div class="wrap pathway-summary">
+        <div>
+          <p class="eyebrow">After the trial</p>
+          <h2 class="display display-lg">One trial.<br>A clear next step.</h2>
+          <p class="lead">Performance is reviewed against the official assessment criteria. Players who meet the
+            required standards may progress through the Season 1 pathway.</p>
+          <p class="disclaimer"><strong>Important:</strong> Registration or participation does not guarantee
+            shortlisting, entry into the player pool or team selection.</p><a href="road-to-saataack50.html"
+            class="btn btn-dark">See the complete road <i data-lucide="arrow-right" class="icon"
+              aria-hidden="true"></i></a>
+        </div>
+        <div class="mini-path">
+          <article><span>01</span><strong>Evaluation</strong></article>
+          <article><span>02</span><strong>Shortlist</strong></article>
+          <article><span>03</span><strong>Advanced assessment</strong></article>
+          <article><span>04</span><strong>Qualified player pool</strong></article>
+          <article><span>05</span><strong>Team selection</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="wrap status-layout">
+        <div>
+          <p class="eyebrow">Already registered?</p>
+          <h2 class="display display-lg">Check your<br>trial status.</h2>
+          <p class="lead">Use your registered mobile number or application ID to follow your registration and evaluation
+            journey.</p>
+        </div>
+        <form class="status-form" id="statusForm"><label><span>Mobile number or application ID</span><input
+              id="applicationId" required placeholder="Enter your details"></label><button class="btn"
+            type="submit">Check my status <i data-lucide="search" class="icon" aria-hidden="true"></i></button>
+          <p class="form-response" id="statusResponse" aria-live="polite"></p>
+          <div class="status-steps"><span>Registration submitted</span><span>Trial confirmed</span><span>Evaluation in
+              progress</span><span>Selection status</span></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section city-alert-section">
+      <div class="wrap city-alert">
+        <div>
+          <p class="eyebrow">No trial in your city?</p>
+          <h2 class="display display-lg">Bring SATAACK 50 closer.</h2>
+          <p class="lead">Tell us where you play. We will notify you when an official trial is announced near your city.
+          </p>
+        </div><button class="btn btn-dark open-city-alert">Request your city <i data-lucide="map-pinned" class="icon"
+            aria-hidden="true"></i></button>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="wrap faq-layout">
+        <div>
+          <p class="eyebrow">Trial questions</p>
+          <h2 class="display display-lg">Before you<br>step in.</h2><a href="faq.html" class="text-link">View all trial
+            FAQs <i data-lucide="arrow-right" class="icon" aria-hidden="true"></i></a>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>Does registering guarantee a trial place?<i data-lucide="plus" class="icon" aria-hidden="true"></i>
+            </summary>
+            <p>Your place is confirmed only after all required registration steps are complete and you receive an
+              official confirmation.</p>
+          </details>
+          <details>
+            <summary>Does attending guarantee selection?<i data-lucide="plus" class="icon" aria-hidden="true"></i>
+            </summary>
+            <p>No. Trial participation gives you the opportunity to be evaluated. Progress depends on performance,
+              eligibility, team requirements and the official selection process.</p>
+          </details>
+          <details>
+            <summary>Can tennis-ball and box-cricket players register?<i data-lucide="plus" class="icon"
+                aria-hidden="true"></i></summary>
+            <p>Yes, provided you meet the eligibility requirements shown for the selected trial.</p>
+          </details>
+          <details>
+            <summary>Is there a registration fee?<i data-lucide="plus" class="icon" aria-hidden="true"></i></summary>
+            <p>Any applicable fee will be displayed clearly before you submit or pay for a registration.</p>
+          </details>
+          <details>
+            <summary>How will I receive my result?<i data-lucide="plus" class="icon" aria-hidden="true"></i></summary>
+            <p>Your trial status and applicable next steps will be communicated through your participant account,
+              registered mobile number or email address.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta lime">
+      <p class="eyebrow eyebrow-center">Your road can start here</p>
+      <h2 class="display display-lg">Find the trial.<br>Take your shot.</h2>
+      <p>Choose a city, register your role and arrive ready to show what you can do.</p><a class="btn btn-dark"
+        href="#trial-finder">Find your trial <i data-lucide="arrow-up" class="icon" aria-hidden="true"></i></a>
+      <div class="route-line">Register → Trial → Evaluation → Shortlist → Player Pool → Selection → SATAACK 50</div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand"><img class="logo" src="assets/images/saataack50-logo.png" alt="SAATAACK 50">
+          <p>50 balls. One shot. Go hard. A premium tennis-ball cricket league built for speed, pressure, skill and
+            spectacle.</p>
+        </div>
+        <div class="footer-col">
+          <h4>League</h4><a href="format.html">50-ball format</a><a href="rules.html">Rules</a><a
+            href="teams.html">Teams</a><a href="about.html">About</a>
+        </div>
+        <div class="footer-col">
+          <h4>Trials &amp; Participants</h4><a href="trials.html">Find a Trial</a><a
+            href="road-to-saataack50.html">Player Pathway</a><a href="selection-process.html">Evaluation</a><a
+            href="trial-participants.html">Participants</a>
+        </div>
+        <div class="footer-col">
+          <h4>Watch</h4><a href="reels-highlights.html">Explainers</a><a href="shows.html">Shows</a><a
+            href="interviews.html">Interviews</a><a href="trial-updates.html">Trial Updates</a>
+        </div>
+        <div class="footer-col">
+          <h4>More</h4><a href="news.html">News</a><a href="partners.html">Partners</a><a
+            href="contact.html">Contact</a><a href="faq.html">FAQ</a>
+        </div>
+      </div>
+      <div class="copyright"><span>© 2026 SATAACK 50. All rights reserved.</span><span>Privacy · Terms · Player
+          code</span></div>
+    </div>
+  </footer>
+
+  <nav class="bottom-nav" aria-label="Mobile navigation"><a href="index.html">Home</a><a href="trials.html"
+      aria-current="page">Trials</a><a href="road-to-saataack50.html">Road</a><a href="player-registration.html"
+      class="register">Register</a></nav>
+  <aside class="drawer" id="mobileDrawer" aria-label="Mobile menu"><button class="drawer-close"
+      aria-label="Close menu"><i data-lucide="x" class="icon" aria-hidden="true"></i></button><a href="trials.html">Find
+      a Trial</a><a href="trial-participants.html">Trial Participants</a><a href="trial-updates.html">Trial
+      Updates</a><a href="selection-process.html">Selection Process</a><a href="road-to-saataack50.html">Road to
+      SATAACK 50</a><a href="teams.html">Teams</a><a href="reels-highlights.html">Watch</a><a class="btn"
+      href="player-registration.html">Register for trials <i data-lucide="arrow-up-right" class="icon"
+        aria-hidden="true"></i></a></aside>
+
+  <div class="modal" id="registerModal" role="dialog" aria-modal="true" aria-labelledby="registerTitle">
+    <div class="modal-panel"><button class="close" aria-label="Close registration"><i data-lucide="x" class="icon"
+          aria-hidden="true"></i></button>
+      <p class="eyebrow">City early access</p>
+      <h2 class="display display-md" id="registerTitle">Join the trial list.</h2>
+      <p class="form-note">Receive trial dates, venue announcements and registration access for your selected city.</p>
+      <form id="trialForm">
+        <div class="form-grid">
+          <div class="field"><label for="name">Full name</label><input id="name" required autocomplete="name"></div>
+          <div class="field"><label for="phone">Mobile number</label><input id="phone" required inputmode="tel"
+              autocomplete="tel"></div>
+          <div class="field"><label for="city">City</label><select id="city">
+              <option>Mumbai</option>
+              <option>Jammu</option>
+              <option>Kolkata</option>
+              <option>Ahmedabad</option>
+              <option>Indore</option>
+              <option>Nagpur</option>
+              <option>Delhi</option>
+              <option>Delhi NCR</option>
+              <option>Other</option>
+            </select></div>
+          <div class="field"><label for="role">Primary role</label><select id="role">
+              <option>Batter</option>
+              <option>Bowler</option>
+              <option>All-rounder</option>
+              <option>Wicketkeeper</option>
+            </select></div>
+          <div class="field full"><button class="btn btn-dark" type="submit">Join the trial list <i
+                data-lucide="arrow-up-right" class="icon" aria-hidden="true"></i></button></div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="modal" id="cityModal" role="dialog" aria-modal="true" aria-labelledby="cityTitle">
+    <div class="modal-panel"><button class="close city-close" aria-label="Close city request"><i data-lucide="x"
+          class="icon" aria-hidden="true"></i></button>
+      <p class="eyebrow">Location alert</p>
+      <h2 class="display display-md" id="cityTitle">Request your city.</h2>
+      <p class="form-note">Joining the alert list does not register you for a trial. You will still need to complete an
+        official registration when applications open.</p>
+      <form id="cityForm">
+        <div class="form-grid">
+          <div class="field"><label for="alertName">Full name</label><input id="alertName" required autocomplete="name">
+          </div>
+          <div class="field"><label for="alertPhone">Mobile number</label><input id="alertPhone" required
+              inputmode="tel" autocomplete="tel"></div>
+          <div class="field"><label for="alertCity">City</label><input id="alertCity" required></div>
+          <div class="field"><label for="alertState">State</label><input id="alertState" required></div>
+          <div class="field"><label for="alertRole">Playing role</label><select id="alertRole">
+              <option>Batter</option>
+              <option>Bowler</option>
+              <option>All-rounder</option>
+              <option>Wicketkeeper</option>
+            </select></div>
+          <div class="field"><label for="travelDistance">Preferred travel distance</label><select id="travelDistance">
+              <option>Within 25 km</option>
+              <option>Within 50 km</option>
+              <option>Within 100 km</option>
+              <option>Anywhere in my state</option>
+            </select></div>
+          <div class="field full"><button class="btn btn-dark" type="submit">Notify me <i data-lucide="bell"
+                class="icon" aria-hidden="true"></i></button></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/scripts/lucide.min.js"></script>
+  <script src="assets/scripts/main.js"></script>
+  <script src="assets/scripts/trials.js"></script>
+</body>
+
+</html>
