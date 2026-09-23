@@ -1,0 +1,149 @@
+.disclaimer-page {
+  padding-top: 132px;
+}
+
+.disclaimer-page .topbar {
+  color: var(--ink);
+  background: var(--paper);
+  border-bottom-color: #102a4333;
+}
+
+.disclaimer-page .menu {
+  color: var(--ink);
+}
+
+.disclaimer-page .nav-item:hover > a,
+.disclaimer-page .nav-item:focus-within > a {
+  color: #000c52;
+}
+
+.disclaimer-page .nav-item > a:after {
+  background: #000c52;
+}
+
+.disclaimer {
+  padding: clamp(76px, 9vw, 132px) 0 clamp(88px, 10vw, 150px);
+}
+
+.disclaimer__intro {
+  margin-bottom: 64px;
+}
+
+.disclaimer__title {
+  font-size: clamp(4rem, 8vw, 8.5rem);
+  margin-bottom: 30px;
+}
+
+.disclaimer__intro p,
+.disclaimer__section p,
+.disclaimer__section li {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.disclaimer__intro p,
+.disclaimer__section p {
+  margin: 0 0 20px;
+}
+
+.disclaimer__section {
+  border-top: 2px solid var(--ink);
+  padding: 34px 0 16px;
+}
+
+.disclaimer__section h2,
+.disclaimer__subsection h3 {
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.disclaimer__section h2 {
+  font-size: clamp(2.3rem, 4vw, 4.4rem);
+  margin: 0 0 28px;
+}
+
+.disclaimer__subsection {
+  margin: 24px 0 0;
+  padding-left: clamp(0px, 2vw, 30px);
+}
+
+.disclaimer__subsection h3 {
+  font-size: clamp(1.5rem, 2.1vw, 2.1rem);
+  margin: 0 0 12px;
+}
+
+.disclaimer__section ul {
+  column-count: 2;
+  column-gap: clamp(28px, 5vw, 72px);
+  margin: 0 0 24px;
+  padding-left: 26px;
+}
+
+.disclaimer__section li {
+  break-inside: avoid;
+  padding-left: 8px;
+  margin: 0 0 7px;
+}
+
+.disclaimer__section li::marker {
+  color: var(--pink);
+}
+
+.disclaimer__contact {
+  border-left: 6px solid var(--pink);
+  padding: 4px 0 4px 24px;
+  margin: 30px 0 34px;
+}
+
+.disclaimer__contact p {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 720px) {
+  .disclaimer-page {
+    padding-top: 108px;
+  }
+
+  .disclaimer {
+    padding-top: 68px;
+  }
+
+  .disclaimer__intro {
+    margin-bottom: 48px;
+  }
+
+  .disclaimer__title {
+    font-size: clamp(3.4rem, 17vw, 5rem);
+  }
+
+  .disclaimer__intro p,
+  .disclaimer__section p,
+  .disclaimer__section li {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .disclaimer__section {
+    padding-top: 28px;
+  }
+
+  .disclaimer__subsection {
+    padding-left: 0;
+    margin-top: 22px;
+  }
+
+  .disclaimer__section ul {
+    column-count: 1;
+    padding-left: 22px;
+  }
+
+  .disclaimer__section li {
+    padding-left: 4px;
+  }
+
+  .disclaimer__contact {
+    padding-left: 16px;
+  }
+}
