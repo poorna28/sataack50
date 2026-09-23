@@ -1,5 +1,5 @@
 /* SAATAACK 50 — Blog, stories and editorial article */
-.stories-page{--blue:#3585ff;--orange:#ff8e2e;--story-line:#c6c5bf;background:#f5f4ef}
+.stories-page{--blue:#3585ff;--orange:#ff8e2e;--story-line:#c6c5bf;background:#f5f4ef}.stories-page .news-filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}.stories-page .news-filters button{border:1px solid currentColor;background:transparent;padding:11px 14px;font:800 .72rem/1 inherit;text-transform:uppercase;cursor:pointer}.stories-page .news-filters button.active{background:#0a0a0a;color:#f5f4ef}
 .stories-page button,.stories-page input,.stories-page textarea{font:inherit}
 .stories-page .topbar{background:linear-gradient(180deg,#050505 0%,#050505c7 62%,transparent)}
 .stories-page .nav-item.active>a{color:var(--lime)}

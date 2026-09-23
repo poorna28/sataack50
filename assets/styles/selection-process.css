@@ -1,169 +1,1036 @@
-.selection-page{background:#f5f4ef}
-.selection-page .topbar{background:linear-gradient(180deg,#050505cc,transparent)}
-.selection-page .nav-item.active>a{color:var(--lime)}
-.selection-page .nav-item.active>a:after{right:0}
-
-.selection-hero{min-height:920px;position:relative;display:flex;align-items:flex-end;background:#080808;color:#fff;padding:210px 0 145px;overflow:hidden}
-.selection-hero-media{position:absolute;inset:0}
-.selection-hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 36%;filter:saturate(.82) contrast(1.08)}
-.selection-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#070707fa 0%,#070707df 35%,#07070740 70%),linear-gradient(0deg,#070707 0%,transparent 55%)}
-.selection-hero-content{position:relative;z-index:2}
-.selection-hero-content .display-xl{font-size:clamp(5rem,11vw,12rem);max-width:1100px}
-.selection-hero-content h1 span{color:var(--lime)}
-.selection-hero-content .lead{margin:30px 0 36px;color:#e0e0da;max-width:690px}
-.selection-principles{position:absolute;z-index:3;left:0;right:0;bottom:0;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #ffffff38;background:#080808c7;backdrop-filter:blur(12px)}
-.selection-principles span{padding:24px clamp(16px,3vw,48px);font-size:.78rem;font-weight:800;text-transform:uppercase;color:#ddd;border-right:1px solid #ffffff24}
-.selection-principles span:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--lime);margin-right:11px}
-
-.standard-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(55px,9vw,150px);align-items:start}
-.standard-copy>.lead{margin:0 0 44px}
-.standard-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid #111}
-.standard-grid article{padding:28px 25px 8px 0;border-right:1px solid #c6c5bf}
-.standard-grid article+article{padding-left:25px}
-.standard-grid .icon{width:38px;height:38px;color:#111;margin-bottom:30px}
-.standard-grid h3{font:900 1.8rem/1 "Barlow Condensed";text-transform:uppercase;margin:0 0 10px}
-.standard-grid p{font-size:.9rem;line-height:1.55;color:#62625e;margin:0}
-
-.section-head{display:flex;justify-content:space-between;gap:50px;align-items:end;margin-bottom:58px}
-.section-head>.lead{margin:0 0 5px}
-.process-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #4a4a4a;border-left:1px solid #4a4a4a}
-.process-grid article{position:relative;min-height:310px;padding:34px;border-right:1px solid #4a4a4a;border-bottom:1px solid #4a4a4a;transition:background-color .25s ease,transform .25s ease}
-.process-grid article:hover{background:#181818;transform:translateY(-4px)}
-.process-grid .process-num{display:block;font:900 1rem/1 "Barlow Condensed";color:#777;margin-bottom:42px}
-.process-grid .icon,.process-grid img{width:52px;height:52px;object-fit:contain;color:var(--lime);margin-bottom:24px}
-.process-grid img{filter:brightness(0) saturate(100%) invert(94%) sepia(91%) saturate(993%) hue-rotate(23deg) brightness(104%) contrast(104%)}
-.process-grid h3{font:900 clamp(1.8rem,2.4vw,2.6rem)/.95 "Barlow Condensed";text-transform:uppercase;margin:0 0 13px}
-.process-grid p{color:#aaa;line-height:1.55;margin:0;max-width:330px}
-.process-note{display:flex;gap:14px;align-items:center;margin-top:28px;color:#bdbdb7;font-size:.9rem}
-.process-note .icon{color:var(--lime);width:23px;height:23px}
-.process-note p{margin:0}
-
-.evaluation-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.evaluation-grid article{background:#fff;border:1px solid #d4d3ce;min-height:310px;padding:28px;display:flex;flex-direction:column;transition:transform .25s ease,border-color .25s ease}
-.evaluation-grid article:hover{transform:translateY(-6px);border-color:#111}
-.evaluation-grid article:nth-child(5){grid-column:2}.evaluation-grid article:nth-child(7){grid-column:4}
-.evaluation-grid strong{font:900 1rem/1 "Barlow Condensed";color:#999}
-.evaluation-grid .icon,.evaluation-grid img{width:58px;height:58px;object-fit:contain;margin:auto 0 32px;color:#111}
-.evaluation-grid h3{font:900 2rem/1 "Barlow Condensed";text-transform:uppercase;margin:0 0 12px}
-.evaluation-grid p{color:#63635e;line-height:1.5;margin:0;font-size:.92rem}
-
-.role-section{display:grid;grid-template-columns:1fr 1fr;background:#0b0b0b;color:#fff;min-height:880px}
-.role-media{position:relative;min-height:650px;overflow:hidden}
-.role-media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 65%,#0b0b0b)}
-.role-media img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
-.role-content{padding:clamp(80px,8vw,130px) clamp(30px,6vw,100px);display:flex;flex-direction:column;justify-content:center}
-.role-content .display{color:var(--lime)}
-.role-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:40px 0 30px}
-.role-tab{display:flex;align-items:center;gap:8px;border:1px solid #555;background:transparent;color:#aaa;min-height:44px;padding:8px 13px;font-size:.72rem;font-weight:800;text-transform:uppercase;cursor:pointer;transition:.2s ease}
-.role-tab img{width:25px;height:25px;object-fit:contain;filter:brightness(0) invert(1);opacity:.65}
-.role-tab:hover,.role-tab.active{background:var(--lime);border-color:var(--lime);color:#000}
-.role-tab.active img,.role-tab:hover img{filter:brightness(0);opacity:1}
-.role-panel{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #444;border-left:1px solid #444}
-.role-panel>div{padding:25px;border-right:1px solid #444;border-bottom:1px solid #444;min-height:165px}
-.role-panel span{display:block;color:var(--lime);font:900 1rem/1 "Barlow Condensed";margin-bottom:22px}
-.role-panel strong{font:900 1.4rem/1 "Barlow Condensed";text-transform:uppercase}
-.role-panel p{font-size:.86rem;line-height:1.5;color:#aaa;margin:9px 0 0}
-.role-disclaimer{color:#858585;font-size:.76rem;line-height:1.55;margin:24px 0 0}
-
-.scenario-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(55px,9vw,150px);align-items:start}
-.scenario-layout>.lead{color:#aaa}.scenario-layout .lead{color:#aaa}
-.scenario-list{border-top:1px solid #484848}
-.scenario-list article{display:grid;grid-template-columns:120px 1fr 1.25fr;gap:25px;align-items:center;padding:27px 0;border-bottom:1px solid #484848}
-.scenario-list span{color:var(--lime);font-size:.74rem;font-weight:800;text-transform:uppercase}
-.scenario-list h3{font:900 1.65rem/1 "Barlow Condensed";text-transform:uppercase;margin:0}
-.scenario-list p{color:#aaa;line-height:1.5;margin:0}
-
-.band-table{border-top:2px solid #111}
-.band-row{display:grid;grid-template-columns:80px minmax(200px,.65fr) 1.35fr;align-items:center;gap:25px;padding:28px 20px;border-bottom:1px solid #aaa;position:relative;overflow:hidden}
-.band-row:before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;background:#111}
-.band-row.exceptional:before{background:var(--pink)}.band-row.strong:before{background:#65ae2e}.band-row.competitive:before{background:#e4b928}.band-row.developing:before{background:#e7822f}.band-row.below:before{background:#777}
-.band-row span{font:900 1.5rem/1 "Barlow Condensed";color:#888}
-.band-row strong{font:900 2rem/1 "Barlow Condensed";text-transform:uppercase}
-.band-row p{margin:0;color:#5f5f5a;line-height:1.5}
-.normalisation{display:grid;grid-template-columns:auto 1fr;gap:24px;background:#e3e2dc;padding:30px;margin-top:32px}
-.normalisation .icon{width:42px;height:42px}
-.normalisation h3{font:900 1.55rem/1 "Barlow Condensed";text-transform:uppercase;margin:0 0 10px}
-.normalisation p{margin:0;color:#5e5e59;line-height:1.55}
-
-.integrity-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(55px,9vw,150px);align-items:start}
-.not-list{display:grid;grid-template-columns:1fr 1fr;border-top:2px solid #111;border-left:2px solid #111}
-.not-list article{min-height:140px;padding:24px;border-right:2px solid #111;border-bottom:2px solid #111;display:flex;flex-direction:column;justify-content:space-between}
-.not-list .icon{width:34px;height:34px}
-.not-list span{font:900 1.45rem/1 "Barlow Condensed";text-transform:uppercase;margin-top:24px}
-
-.decisions-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(55px,9vw,150px);align-items:start}
-.decisions-layout .btn{margin-top:25px}
-.decision-stack{border-top:2px solid #111}
-.decision-stack article{display:grid;grid-template-columns:70px 1fr;gap:25px;padding:28px 0;border-bottom:1px solid #aaa}
-.decision-stack>article>span{font:900 2.4rem/1 "Barlow Condensed";color:var(--pink)}
-.decision-stack h3{font:900 2rem/1 "Barlow Condensed";text-transform:uppercase;margin:0 0 9px}
-.decision-stack p{margin:0;color:#61615c;line-height:1.55}
-
-.team-selection-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(55px,9vw,150px);align-items:start}
-.team-selection-layout .lead{color:#d0d0ca;margin-top:0}
-.pool-route{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:14px;margin:45px 0 32px}
-.pool-route span{min-height:95px;border:1px solid #4d4d4d;display:grid;place-items:center;text-align:center;padding:15px;font:900 1.35rem/1 "Barlow Condensed";text-transform:uppercase}
-.pool-route .icon{color:var(--lime)}
-.team-note{font-size:.82rem;color:#8c8c87;line-height:1.55}
-
-.review-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(55px,9vw,150px);align-items:start}
-.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.review-grid article{background:#fff;border-top:5px solid #111;min-height:280px;padding:27px}
-.review-grid .icon{width:42px;height:42px;margin-bottom:65px}
-.review-grid h3{font:900 1.7rem/1 "Barlow Condensed";text-transform:uppercase;margin:0 0 12px}
-.review-grid p{font-size:.9rem;color:#62625d;line-height:1.5;margin:0}
-.review-limit{grid-column:1/-1;background:#deddd7;padding:20px 24px;margin:18px 0 0;line-height:1.5}
-
-.faq-layout{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(55px,9vw,150px);align-items:start}
-.faq-list{border-top:2px solid #111}
-.faq-list details{border-bottom:1px solid #999;padding:0}
-.faq-list summary{list-style:none;display:flex;justify-content:space-between;gap:22px;align-items:center;padding:26px 0;font:900 1.55rem/1 "Barlow Condensed";text-transform:uppercase;cursor:pointer}
-.faq-list summary::-webkit-details-marker{display:none}
-.faq-list summary .icon{transition:transform .2s ease}
-.faq-list details[open] summary .icon{transform:rotate(45deg)}
-.faq-list details p{max-width:720px;color:#5d5d58;line-height:1.6;margin:0;padding:0 50px 27px 0}
-.final-actions{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
-
-@media(max-width:1280px){
-  .selection-hero{min-height:850px}
-  .standard-layout,.scenario-layout,.integrity-layout,.decisions-layout,.team-selection-layout,.review-layout,.faq-layout{grid-template-columns:1fr;gap:45px}
-  .process-grid{grid-template-columns:repeat(2,1fr)}
-  .evaluation-grid{grid-template-columns:repeat(3,1fr)}
-  .evaluation-grid article:nth-child(5),.evaluation-grid article:nth-child(7){grid-column:auto}
-  .evaluation-grid article:last-child{grid-column:2}
-  .role-section{grid-template-columns:.85fr 1.15fr}
+.selection-page {
+  background: #f5f4ef
 }
 
-@media(max-width:820px){
-  .selection-principles{grid-template-columns:1fr 1fr}
-  .selection-principles span{padding:17px 20px;border-bottom:1px solid #ffffff24}
-  .selection-hero{padding-bottom:190px}
-  .standard-grid{grid-template-columns:1fr}
-  .standard-grid article,.standard-grid article+article{padding:25px 0;border-right:0;border-bottom:1px solid #c6c5bf}
-  .section-head{display:block}.section-head>.lead{margin-top:28px}
-  .role-section{grid-template-columns:1fr}.role-media{min-height:560px}.role-media:after{background:linear-gradient(0deg,#0b0b0b,transparent 40%)}
-  .evaluation-grid{grid-template-columns:1fr 1fr}.evaluation-grid article:last-child{grid-column:1/-1}
-  .scenario-list article{grid-template-columns:90px 1fr}.scenario-list p{grid-column:2}
-  .review-grid{grid-template-columns:1fr 1fr}.review-grid article:last-child{grid-column:1/-1}
+.selection-page .topbar {
+  background: linear-gradient(180deg, #050505cc, transparent)
 }
 
-@media(max-width:720px){
-  .selection-hero{min-height:790px;padding:160px 0 190px}.selection-hero-media img{object-position:64% center}.selection-hero:after{background:linear-gradient(0deg,#070707 0%,#070707db 62%,#07070722 100%)}
-  .selection-hero-content .display-xl{font-size:clamp(4.5rem,21vw,7rem)}
-  .selection-principles span{font-size:.66rem}
-  .process-grid{grid-template-columns:1fr}.process-grid article{min-height:auto;padding:28px}
-  .evaluation-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}.evaluation-grid article{min-width:82vw;scroll-snap-align:start}
-  .role-media{min-height:430px}.role-content{padding:76px 20px}.role-tabs{display:grid;grid-template-columns:1fr 1fr}.role-tab{justify-content:center}
-  .role-panel{grid-template-columns:1fr}.role-panel>div{min-height:auto}
-  .scenario-list article{grid-template-columns:1fr;gap:9px}.scenario-list p{grid-column:auto}
-  .band-row{grid-template-columns:48px 1fr;gap:12px;padding:24px 14px}.band-row p{grid-column:2}
-  .not-list{grid-template-columns:1fr}.not-list article{min-height:120px}
-  .pool-route{grid-template-columns:1fr}.pool-route .icon{transform:rotate(90deg);margin:auto}
-  .review-grid{grid-template-columns:1fr}.review-grid article:last-child{grid-column:auto}.review-grid .icon{margin-bottom:42px}
-  .faq-list summary{font-size:1.35rem}.faq-list details p{padding-right:0}
-  .final-actions{display:grid}.final-actions .btn{width:100%}
+.selection-page .nav-item.active>a {
+  color: var(--lime)
 }
 
-@media(min-width:1800px){.selection-hero{min-height:1000px}.process-grid article{min-height:340px}.role-section{min-height:950px}}
+.selection-page .nav-item.active>a:after {
+  right: 0
+}
 
-@media(prefers-reduced-motion:reduce){.process-grid article,.evaluation-grid article,.role-tab,.faq-list summary .icon{transition:none}}
+.selection-hero {
+  min-height: 920px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background: #080808;
+  color: #fff;
+  padding: 210px 0 145px;
+  overflow: hidden
+}
+
+.selection-hero-media {
+  position: absolute;
+  inset: 0
+}
+
+.selection-hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 36%;
+  filter: saturate(.82) contrast(1.08)
+}
+
+.selection-hero:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #070707fa 0%, #070707df 35%, #07070740 70%), linear-gradient(0deg, #070707 0%, transparent 55%)
+}
+
+.selection-hero-content {
+  position: relative;
+  z-index: 2
+}
+
+.selection-hero-content .display-xl {
+  font-size: clamp(5rem, 11vw, 12rem);
+  max-width: 1100px
+}
+
+.selection-hero-content h1 span {
+  color: var(--lime)
+}
+
+.selection-hero-content .lead {
+  margin: 30px 0 36px;
+  color: #e0e0da;
+  max-width: 690px
+}
+
+.selection-principles {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #ffffff38;
+  background: #080808c7;
+  backdrop-filter: blur(12px)
+}
+
+.selection-principles span {
+  padding: 24px clamp(16px, 3vw, 48px);
+  font-size: .78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ddd;
+  border-right: 1px solid #ffffff24
+}
+
+.selection-principles span:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--lime);
+  margin-right: 11px
+}
+
+.standard-layout {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: clamp(55px, 9vw, 150px);
+  align-items: start
+}
+
+.standard-copy>.lead {
+  margin: 0 0 44px
+}
+
+.standard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 2px solid #111
+}
+
+.standard-grid article {
+  padding: 28px 25px 8px 0;
+  border-right: 1px solid #c6c5bf
+}
+
+.standard-grid article+article {
+  padding-left: 25px
+}
+
+.standard-grid .icon {
+  width: 38px;
+  height: 38px;
+  color: #111;
+  margin-bottom: 30px
+}
+
+.standard-grid h3 {
+  font: 900 1.8rem/1 "Barlow Condensed";
+  text-transform: uppercase;
+  margin: 0 0 10px
+}
+
+.standard-grid p {
+  font-size: .9rem;
+  line-height: 1.55;
+  color: #62625e;
+  margin: 0
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: end;
+  margin-bottom: 58px
+}
+
+.section-head>.lead {
+  margin: 0 0 5px
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #4a4a4a;
+  border-left: 1px solid #4a4a4a
+}
+
+.process-grid article {
+  position: relative;
+  min-height: 310px;
+  padding: 34px;
+  border-right: 1px solid #4a4a4a;
+  border-bottom: 1px solid #4a4a4a;
+  transition: background-color .25s ease, transform .25s ease
+}
+
+.process-grid article:hover {
+  background: #181818;
+  transform: translateY(-4px)
+}
+
+.process-grid .process-num {
+  display: block;
+  font: 900 1rem/1 "Barlow Condensed";
+  color: #777;
+  margin-bottom: 42px
+}
+
+.process-grid .icon,
+.process-grid img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  color: var(--lime);
+  margin-bottom: 24px
+}
+
+.process-grid img {
+  filter: brightness(0) saturate(100%) invert(94%) sepia(91%) saturate(993%) hue-rotate(23deg) brightness(104%) contrast(104%)
+}
+
+.process-grid h3 {
+  font: 900 clamp(1.8rem, 2.4vw, 2.6rem)/.95 "Barlow Condensed";
+  text-transform: uppercase;
+  margin: 0 0 13px
+}
+
+.process-grid p {
+  color: #aaa;
+  line-height: 1.55;
+  margin: 0;
+  max-width: 330px
+}
+
+.process-note {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-top: 28px;
+  color: #bdbdb7;
+  font-size: .9rem
+}
+
+.process-note .icon {
+  color: var(--lime);
+  width: 23px;
+  height: 23px
+}
+
+.process-note p {
+  margin: 0
+}
+
+.process-section .eligibility-note {
+  margin: 0 0 28px;
+  padding: 18px 22px;
+  background: #e3e2dc;
+  border-left: 5px solid #111;
+  line-height: 1.55;
+  color: #373731
+}
+
+.evaluation-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px
+}
+
+.evaluation-grid article {
+  background: #fff;
+  border: 1px solid #d4d3ce;
+  min-height: 310px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  transition: transform .25s ease, border-color .25s ease
+}
+
+.evaluation-grid article:hover {
+  transform: translateY(-6px);
+  border-color: #111
+}
+
+.evaluation-grid article:nth-child(5) {
+  grid-column: 2
+}
+
+.evaluation-grid article:nth-child(7) {
+  grid-column: 4
+}
+
+.evaluation-grid strong {
+  font: 900 1rem/1 "Barlow Condensed";
+  color: #999
+}
+
+.evaluation-grid .icon,
+.evaluation-grid img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  margin: auto 0 32px;
+  color: #111
+}
+
+.evaluation-grid h3 {
+  font: 900 2rem/1 "Barlow Condensed";
+  text-transform: uppercase;
+  margin: 0 0 12px
+}
+
+.evaluation-grid p {
+  color: #63635e;
+  line-height: 1.5;
+  margin: 0;
+  font-size: .92rem
+}
+
+.role-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #0b0b0b;
+  color: #fff;
+  min-height: 880px
+}
+
+.role-media {
+  position: relative;
+  min-height: 650px;
+  overflow: hidden
+}
+
+.role-media:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 65%, #0b0b0b)
+}
+
+.role-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  object-position: left
+}
+
+.role-content {
+  padding: clamp(80px, 8vw, 130px) clamp(30px, 6vw, 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.role-content .display {
+  color: var(--lime)
+}
+
+.role-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 40px 0 30px
+}
+
+.role-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #555;
+  background: transparent;
+  color: #aaa;
+  min-height: 44px;
+  padding: 8px 13px;
+  font-size: .72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .2s ease
+}
+
+.role-tab img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: .65
+}
+
+.role-tab:hover,
+.role-tab.active {
+  background: var(--lime);
+  border-color: var(--lime);
+  color: #000
+}
+
+.role-tab.active img,
+.role-tab:hover img {
+  filter: brightness(0);
+  opacity: 1
+}
+
+.role-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #444;
+  border-left: 1px solid #444
+}
+
+.role-panel>div {
+  padding: 25px;
+  border-right: 1px solid #444;
+  border-bottom: 1px solid #444;
+  min-height: 165px
+}
+
+.role-panel span {
+  display: block;
+  color: var(--lime);
+  font: 900 1rem/1 "Barlow Condensed";
+  margin-bottom: 22px
+}
+
+.role-panel strong {
+  font: 900 1.4rem/1 "Barlow Condensed";
+  text-transform: uppercase
+}
+
+.role-panel p {
+  font-size: .86rem;
+  line-height: 1.5;
+  color: #aaa;
+  margin: 9px 0 0
+}
+
+.role-disclaimer {
+  color: #858585;
+  font-size: .76rem;
+  line-height: 1.55;
+  margin: 24px 0 0
+}
+
+.scenario-layout {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: clamp(55px, 9vw, 150px);
+  align-items: start
+}
+
+.scenario-layout>.lead {
+  color: #aaa
+}
+
+.scenario-layout .lead {
+  color: #aaa
+}
+
+.scenario-list {
+  border-top: 1px solid #484848
+}
+
+.scenario-list article {
+  display: grid;
+  grid-template-columns: 120px 1fr 1.25fr;
+  gap: 25px;
+  align-items: center;
+  padding: 27px 0;
+  border-bottom: 1px solid #484848
+}
+
+.scenario-list span {
+  color: var(--lime);
+  font-size: .74rem;
+  font-weight: 800;
+  text-transform: uppercase
+}
+
+.scenario-list h3 {
+  font: 900 1.65rem/1 "Barlow Condensed";
+  text-transform: uppercase;
+  margin: 0
+}
+
+.scenario-list p {
+  color: #aaa;
+  line-height: 1.5;
+  margin: 0
+}
+
+.band-table {
+  border-top: 2px solid #111
+}
+
+.band-row {
+  display: grid;
+  grid-template-columns: 80px minmax(200px, .65fr) 1.35fr;
+  align-items: center;
+  gap: 25px;
+  padding: 28px 20px;
+  border-bottom: 1px solid #aaa;
+  position: relative;
+  overflow: hidden
+}
+
+.band-row:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 7px;
+  background: #111
+}
+
+.band-row.exceptional:before {
+  background: var(--pink)
+}
+
+.band-row.strong:before {
+  background: #65ae2e
+}
+
+.band-row.competitive:before {
+  background: #e4b928
+}
+
+.band-row.developing:before {
+  background: #e7822f
+}
+
+.band-row.below:before {
+  background: #777
+}
+
+.band-row span {
+  font: 900 1.5rem/1 "Barlow Condensed";
+  color: #888
+}
+
+.band-row strong {
+  font: 900 2rem/1 "Barlow Condensed";
+  text-transform: uppercase
+}
+
+.band-row p {
+  margin: 0;
+  color: #5f5f5a;
+  line-height: 1.5
+}
+
+.normalisation {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  background: #e3e2dc;
+  padding: 30px;
+  margin-top: 32px
+}
+
+.normalisation .icon {
+  width: 42px;
+  height: 42px
+}
+
+.normalisation h3 {
+  font: 900 1.55rem/1 "Barlow Condensed";
+  text-transform: uppercase;
+  margin: 0 0 10px
+}
+
+.normalisation p {
+  margin: 0;
+  color: #5e5e59;
+  line-height: 1.55
+}
+
+.integrity-layout {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: clamp(55px, 9vw, 150px);
+  align-items: start
+}
+
+.not-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 2px solid #111;
+  border-left: 2px solid #111
+}
+
+.not-list article {
+  min-height: 140px;
+  padding: 24px;
+  border-right: 2px solid #111;
+  border-bottom: 2px solid #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.not-list .icon {
+  width: 34px;
+  height: 34px
+}
+
+.not-list span {
+  font: 900 1.45rem/1 "Barlow Condensed";
+  text-transform: uppercase;
+  margin-top: 24px
+}
+
+.decisions-layout {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: clamp(55px, 9vw, 150px);
+  align-items: start
+}
+
+.decisions-layout .btn {
+  margin-top: 25px
+}
+
+.decision-stack {
+  border-top: 2px solid #111
+}
+
+.decision-stack article {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 25px;
+  padding: 28px 0;
+  border-bottom: 1px solid #aaa
+}
+
+.decision-stack>article>span {
+  font: 900 2.4rem/1 "Barlow Condensed";
+  color: var(--pink)
+}
+
+.decision-stack h3 {
+  font: 900 2rem/1 "Barlow Condensed";
+  text-transform: uppercase;
+  margin: 0 0 9px
+}
+
+.decision-stack p {
+  margin: 0;
+  color: #61615c;
+  line-height: 1.55
+}
+
+.team-selection-layout {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: clamp(55px, 9vw, 150px);
+  align-items: start
+}
+
+.team-selection-layout .lead {
+  color: #d0d0ca;
+  margin-top: 0
+}
+
+.pool-route {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 14px;
+  margin: 45px 0 32px
+}
+
+.pool-route span {
+  min-height: 95px;
+  border: 1px solid #4d4d4d;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 15px;
+  font: 900 1.35rem/1 "Barlow Condensed";
+  text-transform: uppercase
+}
+
+.pool-route .icon {
+  color: var(--lime)
+}
+
+.team-note {
+  font-size: .82rem;
+  color: #8c8c87;
+  line-height: 1.55
+}
+
+.review-layout {
+  display: grid;
+  grid-template-columns: .75fr 1.25fr;
+  gap: clamp(55px, 9vw, 150px);
+  align-items: start
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px
+}
+
+.review-grid article {
+  background: #fff;
+  border-top: 5px solid #111;
+  min-height: 280px;
+  padding: 27px
+}
+
+.review-grid .icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 65px
+}
+
+.review-grid h3 {
+  font: 900 1.7rem/1 "Barlow Condensed";
+  text-transform: uppercase;
+  margin: 0 0 12px
+}
+
+.review-grid p {
+  font-size: .9rem;
+  color: #62625d;
+  line-height: 1.5;
+  margin: 0
+}
+
+.review-limit {
+  grid-column: 1/-1;
+  background: #deddd7;
+  padding: 20px 24px;
+  margin: 18px 0 0;
+  line-height: 1.5
+}
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: .7fr 1.3fr;
+  gap: clamp(55px, 9vw, 150px);
+  align-items: start
+}
+
+.faq-list {
+  border-top: 2px solid #111
+}
+
+.faq-list details {
+  border-bottom: 1px solid #999;
+  padding: 0
+}
+
+.faq-list summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+  align-items: center;
+  padding: 26px 0;
+  font: 900 1.55rem/1 "Barlow Condensed";
+  text-transform: uppercase;
+  cursor: pointer
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none
+}
+
+.faq-list summary .icon {
+  transition: transform .2s ease
+}
+
+.faq-list details[open] summary .icon {
+  transform: rotate(45deg)
+}
+
+.faq-list details p {
+  max-width: 720px;
+  color: #5d5d58;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 50px 27px 0
+}
+
+.final-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap
+}
+
+@media(max-width:1280px) {
+  .selection-hero {
+    min-height: 850px
+  }
+
+  .standard-layout,
+  .scenario-layout,
+  .integrity-layout,
+  .decisions-layout,
+  .team-selection-layout,
+  .review-layout,
+  .faq-layout {
+    grid-template-columns: 1fr;
+    gap: 45px
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  .evaluation-grid {
+    grid-template-columns: repeat(3, 1fr)
+  }
+
+  .evaluation-grid article:nth-child(5),
+  .evaluation-grid article:nth-child(7) {
+    grid-column: auto
+  }
+
+  .evaluation-grid article:last-child {
+    grid-column: 2
+  }
+
+  .role-section {
+    grid-template-columns: .85fr 1.15fr
+  }
+}
+
+@media(max-width:820px) {
+  .selection-principles {
+    grid-template-columns: 1fr 1fr
+  }
+
+  .selection-principles span {
+    padding: 17px 20px;
+    border-bottom: 1px solid #ffffff24
+  }
+
+  .selection-hero {
+    padding-bottom: 190px
+  }
+
+  .standard-grid {
+    grid-template-columns: 1fr
+  }
+
+  .standard-grid article,
+  .standard-grid article+article {
+    padding: 25px 0;
+    border-right: 0;
+    border-bottom: 1px solid #c6c5bf
+  }
+
+  .section-head {
+    display: block
+  }
+
+  .section-head>.lead {
+    margin-top: 28px
+  }
+
+  .role-section {
+    grid-template-columns: 1fr
+  }
+
+  .role-media {
+    min-height: 560px
+  }
+
+  .role-media:after {
+    background: linear-gradient(0deg, #0b0b0b, transparent 40%)
+  }
+
+  .evaluation-grid {
+    grid-template-columns: 1fr 1fr
+  }
+
+  .evaluation-grid article:last-child {
+    grid-column: 1/-1
+  }
+
+  .scenario-list article {
+    grid-template-columns: 90px 1fr
+  }
+
+  .scenario-list p {
+    grid-column: 2
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr 1fr
+  }
+
+  .review-grid article:last-child {
+    grid-column: 1/-1
+  }
+}
+
+@media(max-width:720px) {
+  .selection-hero {
+    min-height: 790px;
+    padding: 160px 0 190px
+  }
+
+  .selection-hero-media img {
+    object-position: 64% center
+  }
+
+  .selection-hero:after {
+    background: linear-gradient(0deg, #070707 0%, #070707db 62%, #07070722 100%)
+  }
+
+  .selection-hero-content .display-xl {
+    font-size: clamp(4.5rem, 21vw, 7rem)
+  }
+
+  .selection-principles span {
+    font-size: .66rem
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr
+  }
+
+  .process-grid article {
+    min-height: auto;
+    padding: 28px
+  }
+
+  .evaluation-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 12px
+  }
+
+  .evaluation-grid article {
+    min-width: 82vw;
+    scroll-snap-align: start
+  }
+
+  .role-media {
+    min-height: 430px
+  }
+
+  .role-content {
+    padding: 76px 20px
+  }
+
+  .role-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+  }
+
+  .role-tab {
+    justify-content: center
+  }
+
+  .role-panel {
+    grid-template-columns: 1fr
+  }
+
+  .role-panel>div {
+    min-height: auto
+  }
+
+  .scenario-list article {
+    grid-template-columns: 1fr;
+    gap: 9px
+  }
+
+  .scenario-list p {
+    grid-column: auto
+  }
+
+  .band-row {
+    grid-template-columns: 48px 1fr;
+    gap: 12px;
+    padding: 24px 14px
+  }
+
+  .band-row p {
+    grid-column: 2
+  }
+
+  .not-list {
+    grid-template-columns: 1fr
+  }
+
+  .not-list article {
+    min-height: 120px
+  }
+
+  .pool-route {
+    grid-template-columns: 1fr
+  }
+
+  .pool-route .icon {
+    transform: rotate(90deg);
+    margin: auto
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr
+  }
+
+  .review-grid article:last-child {
+    grid-column: auto
+  }
+
+  .review-grid .icon {
+    margin-bottom: 42px
+  }
+
+  .faq-list summary {
+    font-size: 1.35rem
+  }
+
+  .faq-list details p {
+    padding-right: 0
+  }
+
+  .final-actions {
+    display: grid
+  }
+
+  .final-actions .btn {
+    width: 100%
+  }
+}
+
+@media(min-width:1800px) {
+  .selection-hero {
+    min-height: 1000px
+  }
+
+  .process-grid article {
+    min-height: 340px
+  }
+
+  .role-section {
+    min-height: 950px
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+  .process-grid article,
+  .evaluation-grid article,
+  .role-tab,
+  .faq-list summary .icon {
+    transition: none
+  }
+}

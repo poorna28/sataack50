@@ -1,30 +1,1366 @@
 /* SAATAACK 50 Player Registration */
-.player-registration-page{--reg-blue:#287cff;--reg-orange:#ff8e2e;--paper:#f2f1eb;--line:#c7c6c0;background:var(--paper);color:#090909}.player-registration-page .topbar{background:linear-gradient(180deg,#050505 0%,#050505dd 63%,transparent)}.player-registration-page .nav-item.active>a{color:var(--lime)}.player-registration-page .nav-item.active>a:after{right:0}.player-registration-page p{font-size:1rem}.player-registration-page [hidden]{display:none!important}
+.player-registration-page {
+    --reg-blue: #287cff;
+    --reg-orange: #ff8e2e;
+    --paper: #f2f1eb;
+    --line: #c7c6c0;
+    background: var(--paper);
+    color: #090909
+}
 
-.registration-hero{position:relative;min-height:940px;display:flex;align-items:flex-end;overflow:hidden;padding:190px 0 clamp(85px,9vw,140px);background:#050505;color:#fff}.registration-hero-media,.registration-hero-media:after{position:absolute;inset:0}.registration-hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 34%;filter:saturate(.72) contrast(1.12)}.registration-hero-media:after{content:"";background:linear-gradient(90deg,#050505fa 0%,#050505ed 42%,#05050572 70%,#05050528),linear-gradient(0deg,#050505f3 0%,transparent 52%)}.registration-hero-layout{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:clamp(55px,8vw,125px);align-items:end}.registration-hero-copy{max-width:920px}.registration-hero-copy .display-xl{font-size:clamp(5.4rem,10vw,11rem)}.registration-hero-copy .display span{color:var(--lime)}.registration-hero-copy .lead{max-width:660px;margin:30px 0 38px;color:#d0d0d0}.hero-actions{display:flex;flex-wrap:wrap;gap:17px}
-.registration-pass{min-height:520px;display:flex;flex-direction:column;padding:27px;background:#111d;border:1px solid #ffffff42;backdrop-filter:blur(12px);box-shadow:10px 10px 0 var(--pink)}.pass-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:1px solid #ffffff55;font-size:.68rem;font-weight:900;text-transform:uppercase}.pass-top svg{width:28px;height:28px;color:var(--lime)}.registration-pass>strong{margin:38px 0;font:900 7.8rem/.7 "Barlow Condensed",Impact,sans-serif;color:var(--lime)}.pass-list{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #555}.pass-list span{display:flex;align-items:center;gap:9px;padding:14px 8px 14px 0;border-bottom:1px solid #555;font-size:.68rem;font-weight:900;text-transform:uppercase}.pass-list span:nth-child(even){padding-left:10px;border-left:1px solid #555}.pass-list svg{width:19px;height:19px;color:var(--pink)}.registration-pass>p{margin:auto 0 0;color:#aaa;font-size:.78rem;line-height:1.55}
+.player-registration-page .topbar {
+    background: linear-gradient(180deg, #050505 0%, #050505dd 63%, transparent)
+}
 
-.registration-strip{background:var(--lime);border-block:2px solid #000}.registration-strip>.wrap{display:grid;grid-template-columns:repeat(4,1fr)}.registration-strip article{min-height:140px;display:flex;flex-direction:column;justify-content:center;padding:22px;border-right:1px solid #000}.registration-strip article:first-child{border-left:1px solid #000}.registration-strip strong{font:900 4rem/.8 "Barlow Condensed",Impact,sans-serif}.registration-strip span{margin-top:11px;font-size:.7rem;font-weight:900;text-transform:uppercase}
+.player-registration-page .nav-item.active>a {
+    color: var(--lime)
+}
 
-.registration-intro-section{background:var(--paper)}.intro-layout{display:grid;grid-template-columns:.72fr 1.28fr;gap:clamp(55px,8vw,130px);align-items:start}.intro-layout .display-lg{font-size:clamp(4.7rem,8vw,8.8rem)}.intro-copy .lead{margin-top:0;color:#656560}.readiness-grid{display:grid;grid-template-columns:repeat(2,1fr);margin-top:45px;border-top:2px solid #000;border-left:1px solid var(--line)}.readiness-grid article{min-height:240px;display:flex;flex-direction:column;padding:24px;background:#fff;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.readiness-grid svg{width:36px;height:36px}.readiness-grid h3{margin:auto 0 8px;font:900 2.1rem/1 "Barlow Condensed",Impact,sans-serif;text-transform:uppercase}.readiness-grid p{margin:0;color:#656560;line-height:1.45}
+.player-registration-page .nav-item.active>a:after {
+    right: 0
+}
 
-.registration-form-section{padding:clamp(90px,10vw,150px) 0;background:#e7e6e0}.form-page-heading{display:flex;align-items:end;justify-content:space-between;gap:50px;margin-bottom:55px}.form-page-heading .display-lg{font-size:clamp(4.8rem,8vw,8.8rem)}.form-security{display:flex;align-items:center;gap:17px;max-width:420px;padding:20px;border:1px solid #aaa;background:#f5f4ef}.form-security svg{width:38px;height:38px;flex:0 0 auto}.form-security p{margin:0;color:#666;font-size:.77rem;line-height:1.5}.form-security strong{color:#000}
-.registration-workspace{display:grid;grid-template-columns:330px minmax(0,1fr);gap:18px;align-items:start}.step-sidebar{position:sticky;top:20px;padding:26px;background:#0b0b0b;color:#fff}.progress-head{display:flex;justify-content:space-between;font-size:.67rem;font-weight:900;text-transform:uppercase}.progress-head strong{color:var(--lime)}.progress-track{height:5px;margin:15px 0 30px;background:#333;overflow:hidden}.progress-track i{display:block;width:25%;height:100%;background:var(--lime);transition:width .25s ease}.form-steps{list-style:none;margin:0;padding:0;border-top:1px solid #444}.form-steps li{display:grid;grid-template-columns:42px 1fr 22px;gap:10px;align-items:center;padding:18px 0;border-bottom:1px solid #444;color:#777}.form-steps li>span{font:900 1.7rem/1 "Barlow Condensed",Impact,sans-serif}.form-steps strong,.form-steps small{display:block}.form-steps strong{font-size:.72rem;text-transform:uppercase}.form-steps small{margin-top:4px;font-size:.65rem}.form-steps li>svg{display:none;width:19px;height:19px}.form-steps li.active{color:#fff}.form-steps li.active>span{color:var(--lime)}.form-steps li.completed{color:#aaa}.form-steps li.completed>svg{display:block;color:var(--lime)}.sidebar-note{display:grid;grid-template-columns:28px 1fr;gap:12px;margin-top:30px;padding:18px;background:#181818;border-left:4px solid var(--pink)}.sidebar-note svg{width:22px;height:22px;color:var(--pink)}.sidebar-note p{margin:0;color:#999;font-size:.72rem;line-height:1.5}.sidebar-note strong{color:#fff}
-.form-stage{min-width:0;background:#f7f6f1;border-top:7px solid var(--pink)}.form-panel,.review-panel{padding:clamp(32px,5vw,65px)}.panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:30px;padding-bottom:30px;border-bottom:3px solid #000}.panel-head>div>span{font-size:.69rem;font-weight:900;text-transform:uppercase;color:var(--pink)}.panel-head h3{margin:10px 0 13px;font:900 clamp(3.5rem,6vw,6.3rem)/.84 "Barlow Condensed",Impact,sans-serif;text-transform:uppercase}.panel-head p{max-width:690px;margin:0;color:#656560;line-height:1.55}.panel-head>svg{width:56px;height:56px;flex:0 0 auto}
-.input-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:36px}.field{min-width:0}.field.full{grid-column:1/-1}.field label{display:block;margin-bottom:9px;font-size:.72rem;font-weight:900;text-transform:uppercase}.field label em{color:var(--pink);font-style:normal}.field label span{color:#777;font-size:.65rem}.field input,.field select,.field textarea{width:100%;border:1px solid #aaa;border-radius:0;background:#fff;color:#000;padding:16px 14px;font:700 .9rem/1.3 Inter,sans-serif;outline:none}.field textarea{resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:#000;box-shadow:0 0 0 3px #d9ff3f88}.field>small,.check-row>small{display:none;margin-top:7px;color:#b00020;font-size:.69rem;font-weight:700}.field.invalid>small{display:block}.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:#b00020}.panel-actions{display:flex;align-items:center;justify-content:space-between;gap:25px;margin-top:38px;padding-top:27px;border-top:1px solid #aaa}.panel-actions>span{color:#777;font-size:.68rem}.text-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;background:transparent;color:#000;padding:10px 0;font:900 .75rem/1 Inter,sans-serif;text-transform:uppercase;cursor:pointer}.text-button svg{width:18px;height:18px}.text-button:hover{color:var(--pink)}
-.upload-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}.upload-box{min-height:330px;display:flex!important;flex-direction:column;align-items:flex-start;justify-content:center;margin:0!important;padding:28px;border:2px dashed #999!important;background:#fff;cursor:pointer;transition:border-color .2s ease,background-color .2s ease}.upload-box:hover,.upload-box:focus-within{border-color:#000!important;background:var(--lime)}.upload-box input{position:absolute;width:1px;height:1px;overflow:hidden;opacity:0}.upload-box>svg{width:52px;height:52px;margin-bottom:45px}.upload-box strong{font:900 2.4rem/1 "Barlow Condensed",Impact,sans-serif;text-transform:uppercase}.upload-box span{margin-top:9px;color:#555;font-size:.78rem;text-transform:none}.upload-box small{margin-top:6px;color:#888;font-size:.66rem;text-transform:none}.upload-box b{margin-top:24px;padding-bottom:4px;border-bottom:2px solid #000;font-size:.69rem;text-transform:uppercase}.file-name{margin:9px 0 0;color:#666;font-size:.72rem!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.upload-error{display:none!important;margin-top:7px;color:#b00020!important}.upload-field.invalid .upload-box{border-color:#b00020!important}.upload-field.invalid .upload-error{display:block!important}.upload-field.has-file .upload-box{border-style:solid!important;border-color:#000!important;background:var(--lime)}
-.consent-block{margin-top:35px;border-top:2px solid #000}.check-row{position:relative;display:grid;grid-template-columns:24px 1fr;column-gap:15px;align-items:start;padding:20px 0;border-bottom:1px solid #aaa;cursor:pointer}.check-row input{width:22px;height:22px;margin:1px 0 0;accent-color:#000}.check-row>span{font-size:.78rem;line-height:1.5;text-transform:none}.check-row>span strong{display:block;margin-bottom:4px;text-transform:uppercase}.check-row>span em{color:var(--pink);font-style:normal}.check-row>small{grid-column:2}.check-row.invalid>small{display:block}.review-summary{display:grid;grid-template-columns:1fr 1fr;margin-top:36px;border-top:2px solid #000;border-left:1px solid #aaa}.review-item{min-height:105px;padding:20px;border-right:1px solid #aaa;border-bottom:1px solid #aaa}.review-item small,.review-item strong{display:block}.review-item small{margin-bottom:9px;color:#777;font-size:.64rem;font-weight:900;text-transform:uppercase}.review-item strong{font-size:.92rem;line-height:1.4}.review-notice{display:grid;grid-template-columns:28px 1fr;gap:13px;margin-top:28px;padding:20px;background:#e6e5df;border-left:5px solid var(--pink)}.review-notice svg{width:24px;height:24px}.review-notice p{margin:0;color:#555;font-size:.76rem;line-height:1.5}
-.registration-success{padding:clamp(40px,7vw,90px);background:var(--lime);color:#000;outline:none}.registration-success>svg{width:70px;height:70px;margin-bottom:55px}.registration-success .eyebrow{color:#000}.registration-success h3{margin:16px 0 25px;font:900 clamp(4rem,8vw,8.5rem)/.82 "Barlow Condensed",Impact,sans-serif;text-transform:uppercase}.registration-success>p:not(.eyebrow){max-width:700px;line-height:1.6}.success-reference{display:inline-flex;flex-direction:column;margin-top:30px;padding:18px 24px;background:#000;color:#fff}.success-reference span{font-size:.6rem;font-weight:900;text-transform:uppercase;color:#aaa}.success-reference strong{margin-top:5px;font:900 1.6rem/1 "Barlow Condensed",Impact,sans-serif;color:var(--lime)}.success-actions{display:flex;align-items:center;gap:25px;flex-wrap:wrap;margin-top:38px}
+.player-registration-page p {
+    font-size: 1rem
+}
 
-.after-registration-section{background:#0b0b0b}.after-heading{display:flex;align-items:end;justify-content:space-between;gap:45px;margin-bottom:55px}.after-heading .display-lg{font-size:clamp(4.7rem,8vw,8.8rem)}.after-heading>.lead{margin:0;color:#aaa}.after-grid{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin:0;padding:0}.after-grid li{min-height:430px;display:flex;flex-direction:column;padding:25px;background:#171717;border-top:6px solid var(--lime)}.after-grid li:nth-child(2){border-color:var(--pink)}.after-grid li:nth-child(3){border-color:var(--reg-blue)}.after-grid li:nth-child(4){border-color:var(--reg-orange)}.after-grid li>span{font-size:.66rem;font-weight:900;color:#777}.after-grid svg{width:50px;height:50px;margin:auto 0}.after-grid h3{margin:0 0 14px;font:900 2.7rem/.92 "Barlow Condensed",Impact,sans-serif;text-transform:uppercase}.after-grid p{margin:0;color:#999;line-height:1.5}
+.player-registration-page [hidden] {
+    display: none !important
+}
 
-.support-section{display:grid;grid-template-columns:1fr 1fr}.support-section>article{min-height:630px;display:flex;flex-direction:column;justify-content:center;padding:clamp(70px,8vw,130px)}.support-section>article:first-child{background:var(--pink);color:#000}.support-section .display-lg{font-size:clamp(4.5rem,7vw,8rem)}.support-section p{max-width:650px;line-height:1.6}.support-section .btn{align-self:flex-start;margin-top:25px}.support-warning{background:var(--reg-blue);color:#000}.support-warning>svg{width:65px;height:65px;margin-bottom:60px}.support-warning h3{margin:0 0 20px;font:900 clamp(3.5rem,6vw,6.5rem)/.86 "Barlow Condensed",Impact,sans-serif;text-transform:uppercase}.support-warning>a{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;margin-top:22px;padding-bottom:5px;border-bottom:2px solid #000;font-size:.73rem;font-weight:900;text-transform:uppercase}.support-warning>a svg{width:18px;height:18px}
+.registration-hero {
+    position: relative;
+    min-height: 940px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 190px 0 clamp(85px, 9vw, 140px);
+    background: #050505;
+    color: #fff
+}
+
+.registration-hero-media,
+.registration-hero-media:after {
+    position: absolute;
+    inset: 0
+}
+
+.registration-hero-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 34%;
+    filter: saturate(.72) contrast(1.12)
+}
+
+.registration-hero-media:after {
+    content: "";
+    background: linear-gradient(90deg, #050505fa 0%, #050505ed 42%, #05050572 70%, #05050528), linear-gradient(0deg, #050505f3 0%, transparent 52%)
+}
+
+.registration-hero-layout {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 380px;
+    gap: clamp(55px, 8vw, 125px);
+    align-items: end
+}
+
+.registration-hero-copy {
+    max-width: 920px
+}
+
+.registration-hero-copy .display-xl {
+    font-size: clamp(5.4rem, 10vw, 11rem)
+}
+
+.registration-hero-copy .display span {
+    color: var(--lime)
+}
+
+.registration-hero-copy .lead {
+    max-width: 660px;
+    margin: 30px 0 38px;
+    color: #d0d0d0
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px
+}
+
+.registration-pass {
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    padding: 27px;
+    background: #111d;
+    border: 1px solid #ffffff42;
+    backdrop-filter: blur(12px);
+    box-shadow: 10px 10px 0 var(--pink)
+}
+
+.pass-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #ffffff55;
+    font-size: .68rem;
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.pass-top svg {
+    width: 28px;
+    height: 28px;
+    color: var(--lime)
+}
+
+.registration-pass>strong {
+    margin: 38px 0;
+    font: 900 7.8rem/.7 "Barlow Condensed", Impact, sans-serif;
+    color: var(--lime)
+}
+
+.pass-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid #555
+}
+
+.pass-list span {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 14px 8px 14px 0;
+    border-bottom: 1px solid #555;
+    font-size: .68rem;
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.pass-list span:nth-child(even) {
+    padding-left: 10px;
+    border-left: 1px solid #555
+}
+
+.pass-list svg {
+    width: 19px;
+    height: 19px;
+    color: var(--pink)
+}
+
+.registration-pass>p {
+    margin: auto 0 0;
+    color: #aaa;
+    font-size: .78rem;
+    line-height: 1.55
+}
+
+.registration-strip {
+    background: var(--lime);
+    border-block: 2px solid #000
+}
+
+.registration-strip>.wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.registration-strip article {
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 22px;
+    border-right: 1px solid #000
+}
+
+.registration-strip article:first-child {
+    border-left: 1px solid #000
+}
+
+.registration-strip strong {
+    font: 900 4rem/.8 "Barlow Condensed", Impact, sans-serif
+}
+
+.registration-strip span {
+    margin-top: 11px;
+    font-size: .7rem;
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.registration-intro-section {
+    background: var(--paper)
+}
+
+.intro-layout {
+    display: grid;
+    grid-template-columns: .72fr 1.28fr;
+    gap: clamp(55px, 8vw, 130px);
+    align-items: start
+}
+
+.intro-layout .display-lg {
+    font-size: clamp(4.7rem, 8vw, 8.8rem)
+}
+
+.intro-copy .lead {
+    margin-top: 0;
+    color: #656560
+}
+
+.readiness-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 45px;
+    border-top: 2px solid #000;
+    border-left: 1px solid var(--line)
+}
+
+.readiness-grid article {
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background: #fff;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line)
+}
+
+.readiness-grid svg {
+    width: 36px;
+    height: 36px
+}
+
+.readiness-grid h3 {
+    margin: auto 0 8px;
+    font: 900 2.1rem/1 "Barlow Condensed", Impact, sans-serif;
+    text-transform: uppercase
+}
+
+.readiness-grid p {
+    margin: 0;
+    color: #656560;
+    line-height: 1.45
+}
+
+.registration-form-section {
+    padding: clamp(90px, 10vw, 150px) 0;
+    background: #e7e6e0
+}
+
+.form-page-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 55px
+}
+
+.form-page-heading .display-lg {
+    font-size: clamp(4.8rem, 8vw, 8.8rem)
+}
+
+.form-security {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    max-width: 420px;
+    padding: 20px;
+    border: 1px solid #aaa;
+    background: #f5f4ef
+}
+
+.form-security svg {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 auto
+}
+
+.form-security p {
+    margin: 0;
+    color: #666;
+    font-size: .77rem;
+    line-height: 1.5
+}
+
+.form-security strong {
+    color: #000
+}
+
+.registration-workspace {
+    display: grid;
+    grid-template-columns: 330px minmax(0, 1fr);
+    gap: 18px;
+    align-items: start
+}
+
+.step-sidebar {
+    position: sticky;
+    top: 20px;
+    padding: 26px;
+    background: #0b0b0b;
+    color: #fff
+}
+
+.progress-head {
+    display: flex;
+    justify-content: space-between;
+    font-size: .67rem;
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.progress-head strong {
+    color: var(--lime)
+}
+
+.progress-track {
+    height: 5px;
+    margin: 15px 0 30px;
+    background: #333;
+    overflow: hidden
+}
+
+.progress-track i {
+    display: block;
+    width: 25%;
+    height: 100%;
+    background: var(--lime);
+    transition: width .25s ease
+}
+
+.form-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #444
+}
+
+.form-steps li {
+    display: grid;
+    grid-template-columns: 42px 1fr 22px;
+    gap: 10px;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid #444;
+    color: #777
+}
+
+.form-steps li>span {
+    font: 900 1.7rem/1 "Barlow Condensed", Impact, sans-serif
+}
+
+.form-steps strong,
+.form-steps small {
+    display: block
+}
+
+.form-steps strong {
+    font-size: .72rem;
+    text-transform: uppercase
+}
+
+.form-steps small {
+    margin-top: 4px;
+    font-size: .65rem
+}
+
+.form-steps li>svg {
+    display: none;
+    width: 19px;
+    height: 19px
+}
+
+.form-steps li.active {
+    color: #fff
+}
+
+.form-steps li.active>span {
+    color: var(--lime)
+}
+
+.form-steps li.completed {
+    color: #aaa
+}
+
+.form-steps li.completed>svg {
+    display: block;
+    color: var(--lime)
+}
+
+.sidebar-note {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 12px;
+    margin-top: 30px;
+    padding: 18px;
+    background: #181818;
+    border-left: 4px solid var(--pink)
+}
+
+.sidebar-note svg {
+    width: 22px;
+    height: 22px;
+    color: var(--pink)
+}
+
+.sidebar-note p {
+    margin: 0;
+    color: #999;
+    font-size: .72rem;
+    line-height: 1.5
+}
+
+.sidebar-note strong {
+    color: #fff
+}
+
+.form-stage {
+    min-width: 0;
+    background: #f7f6f1;
+    border-top: 7px solid var(--pink)
+}
+
+.form-panel,
+.review-panel {
+    padding: clamp(32px, 5vw, 65px)
+}
+
+.panel-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #000
+}
+
+.panel-head>div>span {
+    font-size: .69rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--pink)
+}
+
+.panel-head h3 {
+    margin: 10px 0 13px;
+    font: 900 clamp(3.5rem, 6vw, 6.3rem)/.84 "Barlow Condensed", Impact, sans-serif;
+    text-transform: uppercase
+}
+
+.panel-head p {
+    max-width: 690px;
+    margin: 0;
+    color: #656560;
+    line-height: 1.55
+}
+
+.panel-head>svg {
+    width: 56px;
+    height: 56px;
+    flex: 0 0 auto
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 36px
+}
+
+.field {
+    min-width: 0
+}
+
+.field.full {
+    grid-column: 1/-1
+}
+
+.field label {
+    display: block;
+    margin-bottom: 9px;
+    font-size: .72rem;
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.field label em {
+    color: var(--pink);
+    font-style: normal
+}
+
+.field label span {
+    color: #777;
+    font-size: .65rem
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 0;
+    background: #fff;
+    color: #000;
+    padding: 16px 14px;
+    font: 700 .9rem/1.3 Inter, sans-serif;
+    outline: none
+}
+
+.field textarea {
+    resize: vertical
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: #000;
+    box-shadow: 0 0 0 3px #d9ff3f88
+}
+
+.field>small,
+.check-row>small {
+    display: none;
+    margin-top: 7px;
+    color: #b00020;
+    font-size: .69rem;
+    font-weight: 700
+}
+
+.field.invalid>small {
+    display: block
+}
+
+.field.invalid input,
+.field.invalid select,
+.field.invalid textarea {
+    border-color: #b00020
+}
+
+.panel-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 38px;
+    padding-top: 27px;
+    border-top: 1px solid #aaa
+}
+
+.panel-actions>span {
+    color: #777;
+    font-size: .68rem
+}
+
+.text-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 0;
+    background: transparent;
+    color: #000;
+    padding: 10px 0;
+    font: 900 .75rem/1 Inter, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer
+}
+
+.text-button svg {
+    width: 18px;
+    height: 18px
+}
+
+.text-button:hover {
+    color: var(--pink)
+}
+
+.upload-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 36px
+}
+
+.upload-box {
+    min-height: 330px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 !important;
+    padding: 28px;
+    border: 2px dashed #999 !important;
+    background: #fff;
+    cursor: pointer;
+    transition: border-color .2s ease, background-color .2s ease
+}
+
+.upload-box:hover,
+.upload-box:focus-within {
+    border-color: #000 !important;
+    background: var(--lime)
+}
+
+.upload-box input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0
+}
+
+.upload-box>svg {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 45px
+}
+
+.upload-box strong {
+    font: 900 2.4rem/1 "Barlow Condensed", Impact, sans-serif;
+    text-transform: uppercase
+}
+
+.upload-box span {
+    margin-top: 9px;
+    color: #555;
+    font-size: .78rem;
+    text-transform: none
+}
+
+.upload-box small {
+    margin-top: 6px;
+    color: #888;
+    font-size: .66rem;
+    text-transform: none
+}
+
+.upload-box b {
+    margin-top: 24px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #000;
+    font-size: .69rem;
+    text-transform: uppercase
+}
+
+.file-name {
+    margin: 9px 0 0;
+    color: #666;
+    font-size: .72rem !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.upload-error {
+    display: none !important;
+    margin-top: 7px;
+    color: #b00020 !important
+}
+
+.upload-field.invalid .upload-box {
+    border-color: #b00020 !important
+}
+
+.upload-field.invalid .upload-error {
+    display: block !important
+}
+
+.upload-field.has-file .upload-box {
+    border-style: solid !important;
+    border-color: #000 !important;
+    background: var(--lime)
+}
+
+.consent-block {
+    margin-top: 35px;
+    border-top: 2px solid #000
+}
+
+.check-row {
+    position: relative;
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    column-gap: 15px;
+    align-items: start;
+    padding: 20px 0;
+    border-bottom: 1px solid #aaa;
+    cursor: pointer
+}
+
+.check-row input {
+    width: 22px;
+    height: 22px;
+    margin: 1px 0 0;
+    accent-color: #000
+}
+
+.check-row>span {
+    font-size: .78rem;
+    line-height: 1.5;
+    text-transform: none
+}
+
+.check-row>span strong {
+    display: block;
+    margin-bottom: 4px;
+    text-transform: uppercase
+}
+
+.check-row>span em {
+    color: var(--pink);
+    font-style: normal
+}
+
+.check-row>small {
+    grid-column: 2
+}
+
+.check-row.invalid>small {
+    display: block
+}
+
+.review-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 36px;
+    border-top: 2px solid #000;
+    border-left: 1px solid #aaa
+}
+
+.review-item {
+    min-height: 105px;
+    padding: 20px;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa
+}
+
+.review-item small,
+.review-item strong {
+    display: block
+}
+
+.review-item small {
+    margin-bottom: 9px;
+    color: #777;
+    font-size: .64rem;
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.review-item strong {
+    font-size: .92rem;
+    line-height: 1.4
+}
+
+.review-notice {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 13px;
+    margin-top: 28px;
+    padding: 20px;
+    background: #e6e5df;
+    border-left: 5px solid var(--pink)
+}
+
+.review-notice svg {
+    width: 24px;
+    height: 24px
+}
+
+.review-notice p {
+    margin: 0;
+    color: #555;
+    font-size: .76rem;
+    line-height: 1.5
+}
+
+.registration-success {
+    padding: clamp(40px, 7vw, 90px);
+    background: var(--lime);
+    color: #000;
+    outline: none
+}
+
+.registration-success>svg {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 55px
+}
+
+.registration-success .eyebrow {
+    color: #000
+}
+
+.registration-success h3 {
+    margin: 16px 0 25px;
+    font: 900 clamp(4rem, 8vw, 8.5rem)/.82 "Barlow Condensed", Impact, sans-serif;
+    text-transform: uppercase
+}
+
+.registration-success>p:not(.eyebrow) {
+    max-width: 700px;
+    line-height: 1.6
+}
+
+.success-reference {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 18px 24px;
+    background: #000;
+    color: #fff
+}
+
+.success-reference span {
+    font-size: .6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #aaa
+}
+
+.success-reference strong {
+    margin-top: 5px;
+    font: 900 1.6rem/1 "Barlow Condensed", Impact, sans-serif;
+    color: var(--lime)
+}
+
+.success-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 38px
+}
+
+.after-registration-section {
+    background: #0b0b0b
+}
+
+.after-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 45px;
+    margin-bottom: 55px
+}
+
+.after-heading .display-lg {
+    font-size: clamp(4.7rem, 8vw, 8.8rem)
+}
+
+.after-heading>.lead {
+    margin: 0;
+    color: #aaa
+}
+
+.after-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 13px;
+    margin: 0;
+    padding: 0
+}
+
+.after-grid li {
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background: #171717;
+    border-top: 6px solid var(--lime)
+}
+
+.after-grid li:nth-child(2) {
+    border-color: var(--pink)
+}
+
+.after-grid li:nth-child(3) {
+    border-color: var(--reg-blue)
+}
+
+.after-grid li:nth-child(4) {
+    border-color: var(--reg-orange)
+}
+
+.after-grid li>span {
+    font-size: .66rem;
+    font-weight: 900;
+    color: #777
+}
+
+.after-grid svg {
+    width: 50px;
+    height: 50px;
+    margin: auto 0
+}
+
+.after-grid h3 {
+    margin: 0 0 14px;
+    font: 900 2.7rem/.92 "Barlow Condensed", Impact, sans-serif;
+    text-transform: uppercase
+}
+
+.after-grid p {
+    margin: 0;
+    color: #999;
+    line-height: 1.5
+}
+
+.support-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.support-section>article {
+    min-height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(70px, 8vw, 130px)
+}
+
+.support-section>article:first-child {
+    background: var(--pink);
+    color: #000
+}
+
+.support-section .display-lg {
+    font-size: clamp(4.5rem, 7vw, 8rem)
+}
+
+.support-section p {
+    max-width: 650px;
+    line-height: 1.6
+}
+
+.support-section .btn {
+    align-self: flex-start;
+    margin-top: 25px
+}
+
+.support-warning {
+    background: var(--reg-blue);
+    color: #000
+}
+
+.support-warning>svg {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 60px
+}
+
+.support-warning h3 {
+    margin: 0 0 20px;
+    font: 900 clamp(3.5rem, 6vw, 6.5rem)/.86 "Barlow Condensed", Impact, sans-serif;
+    text-transform: uppercase
+}
+
+.support-warning>a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    align-self: flex-start;
+    margin-top: 22px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000;
+    font-size: .73rem;
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.support-warning>a svg {
+    width: 18px;
+    height: 18px
+}
 
 /* Page-scoped safeguards preserve the shared footer grid. */
-.player-registration-page .footer{background:#0b0b0b;color:#fff;padding:80px 0 105px}.player-registration-page .footer-top{display:grid;grid-template-columns:minmax(260px,1.6fr) repeat(4,minmax(120px,1fr));gap:44px;align-items:start}.player-registration-page .footer-brand{min-width:0}.player-registration-page .footer-brand .logo{display:block;width:auto;height:80px;max-width:100%;object-fit:contain;object-position:left center;margin:0 0 20px}.player-registration-page .footer-brand p{max-width:350px;margin:0;color:#888;line-height:1.5}.player-registration-page .footer-col{min-width:0;margin-top:0}.player-registration-page .footer-col h4{margin:0 0 18px}.player-registration-page .footer-col a{display:block}.player-registration-page .copyright{display:flex}
+.player-registration-page .footer {
+    background: #0b0b0b;
+    color: #fff;
+    padding: 80px 0 105px
+}
 
-@media(max-width:1350px){.registration-hero-layout{grid-template-columns:minmax(0,1fr) 330px;gap:55px}.registration-pass{min-height:480px}.registration-pass>strong{font-size:6.8rem}.after-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.after-grid li{min-height:350px}.player-registration-page .footer-top{grid-template-columns:minmax(250px,1.4fr) repeat(2,minmax(140px,1fr))}.player-registration-page .footer-col:nth-last-child(-n+2){margin-top:0}}
-@media(max-width:980px){.registration-hero{min-height:830px}.registration-hero-layout{grid-template-columns:1fr}.registration-pass{display:none}.registration-hero-media img{object-position:62% center}.registration-hero-media:after{background:linear-gradient(0deg,#050505 0%,#050505e7 62%,#05050546 100%)}.intro-layout{grid-template-columns:1fr}.form-page-heading{display:block}.form-security{margin-top:30px}.registration-workspace{grid-template-columns:1fr}.step-sidebar{position:static}.form-steps{display:grid;grid-template-columns:repeat(4,1fr)}.form-steps li{display:block;padding:15px 10px;border-right:1px solid #444}.form-steps li>div small,.form-steps li>svg{display:none}.form-steps strong{margin-top:7px}.sidebar-note{display:none}.support-section{grid-template-columns:1fr}.support-section>article{min-height:560px}}
-@media(max-width:720px){.registration-hero{min-height:730px;padding:145px 0 75px}.registration-hero-copy .display-xl{font-size:clamp(4.4rem,19vw,6.8rem)}.hero-actions{display:grid}.hero-actions .btn{width:100%}.registration-strip>.wrap{grid-template-columns:1fr 1fr}.registration-strip article{min-height:115px}.registration-strip article:nth-child(n+3){border-top:1px solid #000}.registration-strip strong{font-size:3rem}.intro-layout .display-lg,.form-page-heading .display-lg,.after-heading .display-lg{font-size:4.3rem}.readiness-grid{grid-template-columns:1fr}.readiness-grid article{min-height:200px}.registration-form-section{padding:80px 0}.registration-workspace{padding-inline:0}.step-sidebar{padding:20px var(--pad)}.form-steps li{padding:13px 5px}.form-steps li>span{font-size:1.4rem}.form-steps strong{font-size:.58rem;line-height:1.25}.form-panel,.review-panel{padding:38px var(--pad)}.panel-head>svg{display:none}.panel-head h3{font-size:3.7rem}.input-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.panel-actions{align-items:stretch;flex-direction:column-reverse}.panel-actions .btn{width:100%}.panel-actions .text-button{align-self:flex-start}.final-panel-actions{flex-direction:column-reverse}.upload-grid{grid-template-columns:1fr}.upload-box{min-height:280px}.review-summary{grid-template-columns:1fr}.registration-success{padding:55px var(--pad)}.registration-success h3{font-size:4.6rem}.success-actions{display:grid}.success-actions .btn{width:100%}.after-heading{display:block}.after-heading>.lead{margin-top:25px}.after-grid{grid-template-columns:1fr}.after-grid li{min-height:330px}.support-section>article{min-height:520px;padding:70px 25px}.support-section .display-lg{font-size:4.3rem}.support-warning h3{font-size:4rem}.player-registration-page .footer{padding:65px 0 85px}.player-registration-page .footer-top{grid-template-columns:1fr 1fr;gap:35px 24px}.player-registration-page .footer-brand{grid-column:1/-1}.player-registration-page .footer-brand .logo{height:72px}.player-registration-page .copyright{display:block}}
-@media(max-width:420px){.form-steps strong{display:none}.form-steps li{text-align:center}.upload-box strong{font-size:2rem}.registration-success h3{font-size:4rem}}
-@media(prefers-reduced-motion:reduce){.progress-track i,.upload-box{transition:none}}
+.player-registration-page .footer-top {
+    display: grid;
+    grid-template-columns: minmax(260px, 1.6fr) repeat(4, minmax(120px, 1fr));
+    gap: 44px;
+    align-items: start
+}
+
+.player-registration-page .footer-brand {
+    min-width: 0
+}
+
+.player-registration-page .footer-brand .logo {
+    display: block;
+    width: auto;
+    height: 80px;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: left center;
+    margin: 0 0 20px
+}
+
+.player-registration-page .footer-brand p {
+    max-width: 350px;
+    margin: 0;
+    color: #888;
+    line-height: 1.5
+}
+
+.player-registration-page .footer-col {
+    min-width: 0;
+    margin-top: 0
+}
+
+.player-registration-page .footer-col h4 {
+    margin: 0 0 18px
+}
+
+.player-registration-page .footer-col a {
+    display: block
+}
+
+.player-registration-page .copyright {
+    display: flex
+}
+.pathway-eligibility {
+    margin-top: 28px;
+    padding: 26px;
+    background: #e3e2dc;
+    border-left: 5px solid #111;
+}
+.pathway-eligibility h3 {
+    font: 900 1.8rem/1 "Barlow Condensed";
+    text-transform: uppercase;
+    margin: 0 0 14px;
+}
+
+@media(max-width:1350px) {
+    .registration-hero-layout {
+        grid-template-columns: minmax(0, 1fr) 330px;
+        gap: 55px
+    }
+
+    .registration-pass {
+        min-height: 480px
+    }
+
+    .registration-pass>strong {
+        font-size: 6.8rem
+    }
+
+    .after-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .after-grid li {
+        min-height: 350px
+    }
+
+    .player-registration-page .footer-top {
+        grid-template-columns: minmax(250px, 1.4fr) repeat(2, minmax(140px, 1fr))
+    }
+
+    .player-registration-page .footer-col:nth-last-child(-n+2) {
+        margin-top: 0
+    }
+}
+
+@media(max-width:980px) {
+    .registration-hero {
+        min-height: 830px
+    }
+
+    .registration-hero-layout {
+        grid-template-columns: 1fr
+    }
+
+    .registration-pass {
+        display: none
+    }
+
+    .registration-hero-media img {
+        object-position: 62% center
+    }
+
+    .registration-hero-media:after {
+        background: linear-gradient(0deg, #050505 0%, #050505e7 62%, #05050546 100%)
+    }
+
+    .intro-layout {
+        grid-template-columns: 1fr
+    }
+
+    .form-page-heading {
+        display: block
+    }
+
+    .form-security {
+        margin-top: 30px
+    }
+
+    .registration-workspace {
+        grid-template-columns: 1fr
+    }
+
+    .step-sidebar {
+        position: static
+    }
+
+    .form-steps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
+
+    .form-steps li {
+        display: block;
+        padding: 15px 10px;
+        border-right: 1px solid #444
+    }
+
+    .form-steps li>div small,
+    .form-steps li>svg {
+        display: none
+    }
+
+    .form-steps strong {
+        margin-top: 7px
+    }
+
+    .sidebar-note {
+        display: none
+    }
+
+    .support-section {
+        grid-template-columns: 1fr
+    }
+
+    .support-section>article {
+        min-height: 560px
+    }
+}
+
+@media(max-width:720px) {
+    .registration-hero {
+        min-height: 730px;
+        padding: 145px 0 75px
+    }
+
+    .registration-hero-copy .display-xl {
+        font-size: clamp(4.4rem, 19vw, 6.8rem)
+    }
+
+    .hero-actions {
+        display: grid
+    }
+
+    .hero-actions .btn {
+        width: 100%
+    }
+
+    .registration-strip>.wrap {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .registration-strip article {
+        min-height: 115px
+    }
+
+    .registration-strip article:nth-child(n+3) {
+        border-top: 1px solid #000
+    }
+
+    .registration-strip strong {
+        font-size: 3rem
+    }
+
+    .intro-layout .display-lg,
+    .form-page-heading .display-lg,
+    .after-heading .display-lg {
+        font-size: 4.3rem
+    }
+
+    .readiness-grid {
+        grid-template-columns: 1fr
+    }
+
+    .readiness-grid article {
+        min-height: 200px
+    }
+
+    .registration-form-section {
+        padding: 80px 0
+    }
+
+    .registration-workspace {
+        padding-inline: 0
+    }
+
+    .step-sidebar {
+        padding: 20px var(--pad)
+    }
+
+    .form-steps li {
+        padding: 13px 5px
+    }
+
+    .form-steps li>span {
+        font-size: 1.4rem
+    }
+
+    .form-steps strong {
+        font-size: .58rem;
+        line-height: 1.25
+    }
+
+    .form-panel,
+    .review-panel {
+        padding: 38px var(--pad)
+    }
+
+    .panel-head>svg {
+        display: none
+    }
+
+    .panel-head h3 {
+        font-size: 3.7rem
+    }
+
+    .input-grid {
+        grid-template-columns: 1fr
+    }
+
+    .field.full {
+        grid-column: auto
+    }
+
+    .panel-actions {
+        align-items: stretch;
+        flex-direction: column-reverse
+    }
+
+    .panel-actions .btn {
+        width: 100%
+    }
+
+    .panel-actions .text-button {
+        align-self: flex-start
+    }
+
+    .final-panel-actions {
+        flex-direction: column-reverse
+    }
+
+    .upload-grid {
+        grid-template-columns: 1fr
+    }
+
+    .upload-box {
+        min-height: 280px
+    }
+
+    .review-summary {
+        grid-template-columns: 1fr
+    }
+
+    .registration-success {
+        padding: 55px var(--pad)
+    }
+
+    .registration-success h3 {
+        font-size: 4.6rem
+    }
+
+    .success-actions {
+        display: grid
+    }
+
+    .success-actions .btn {
+        width: 100%
+    }
+
+    .after-heading {
+        display: block
+    }
+
+    .after-heading>.lead {
+        margin-top: 25px
+    }
+
+    .after-grid {
+        grid-template-columns: 1fr
+    }
+
+    .after-grid li {
+        min-height: 330px
+    }
+
+    .support-section>article {
+        min-height: 520px;
+        padding: 70px 25px
+    }
+
+    .support-section .display-lg {
+        font-size: 4.3rem
+    }
+
+    .support-warning h3 {
+        font-size: 4rem
+    }
+
+    .player-registration-page .footer {
+        padding: 65px 0 85px
+    }
+
+    .player-registration-page .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 24px
+    }
+
+    .player-registration-page .footer-brand {
+        grid-column: 1/-1
+    }
+
+    .player-registration-page .footer-brand .logo {
+        height: 72px
+    }
+
+    .player-registration-page .copyright {
+        display: block
+    }
+}
+
+@media(max-width:420px) {
+    .form-steps strong {
+        display: none
+    }
+
+    .form-steps li {
+        text-align: center
+    }
+
+    .upload-box strong {
+        font-size: 2rem
+    }
+
+    .registration-success h3 {
+        font-size: 4rem
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+    .progress-track i,
+    .upload-box {
+        transition: none
+    }
+}

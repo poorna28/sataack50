@@ -95,7 +95,7 @@
 .role-list img{width:54px;height:54px}
 .role-list h3{font:900 2rem/1 "Barlow Condensed";text-transform:uppercase;margin:0 0 6px}
 .role-list p{color:#64645f;line-height:1.45;margin:0}
-.roles-content .eligibility-note{font-size:.86rem}
+.roles-content .eligibility-note{display:flex;gap:10px;align-items:flex-start;font-size:.86rem;line-height:1.55}.roles-content .eligibility-note .icon{flex:0 0 auto;margin-top:2px}
 
 @media(max-width:1280px){
   .trials-hero{min-height:820px}
